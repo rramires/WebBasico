@@ -1,2 +1,2 @@
 # WebBasico
-Estudos de html, css e javascript para fontend
+Estudos de html, css e javascript para frontend
