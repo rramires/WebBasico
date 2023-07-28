@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BoxSizing</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        p{
+            background-color: #ccc;
+            width: 500px;
+        }
+
+        .p1{
+            padding: 25px;
+        }
+        .p2{
+            padding: 25px;
+            border: 10px solid green;
+            /* Padrao = content-box => Aumenta o tamanho com borda etc */
+            box-sizing: content-box;
+        }
+        .p3{
+            padding: 25px;
+            border: 10px solid green;
+            /* bor-box = mantém o tamanho */
+            box-sizing: border-box;
+        }
+     
+
+    </style>
+</head>
+<body>
+    <h1>Box Sizing</h1>
+    <p class="p1">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat aspernatur velit laudantium perspiciatis neque voluptate atque mollitia omnis reprehenderit qui ut at, tempore asperiores dignissimos vitae necessitatibus sapiente, voluptatibus corporis porro consequatur hic? Aut laudantium enim aperiam veniam quia odio ut quasi labore dolorem tenetur expedita est quisquam voluptas ex possimus, excepturi culpa delectus assumenda impedit eius odit vel deserunt cum. Dignissimos cum, porro excepturi inventore saepe ducimus quasi necessitatibus eveniet rem, ullam placeat itaque sed quam amet numquam possimus qui voluptates provident optio doloremque doloribus quaerat consectetur nobis blanditiis. Atque omnis delectus nihil culpa quae itaque ullam aspernatur repellat.
+    </p>
+    <p class="p2">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat aspernatur velit laudantium perspiciatis neque voluptate atque mollitia omnis reprehenderit qui ut at, tempore asperiores dignissimos vitae necessitatibus sapiente, voluptatibus corporis porro consequatur hic? Aut laudantium enim aperiam veniam quia odio ut quasi labore dolorem tenetur expedita est quisquam voluptas ex possimus, excepturi culpa delectus assumenda impedit eius odit vel deserunt cum. Dignissimos cum, porro excepturi inventore saepe ducimus quasi necessitatibus eveniet rem, ullam placeat itaque sed quam amet numquam possimus qui voluptates provident optio doloremque doloribus quaerat consectetur nobis blanditiis. Atque omnis delectus nihil culpa quae itaque ullam aspernatur repellat.
+    </p>
+    <p class="p3">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat aspernatur velit laudantium perspiciatis neque voluptate atque mollitia omnis reprehenderit qui ut at, tempore asperiores dignissimos vitae necessitatibus sapiente, voluptatibus corporis porro consequatur hic? Aut laudantium enim aperiam veniam quia odio ut quasi labore dolorem tenetur expedita est quisquam voluptas ex possimus, excepturi culpa delectus assumenda impedit eius odit vel deserunt cum. Dignissimos cum, porro excepturi inventore saepe ducimus quasi necessitatibus eveniet rem, ullam placeat itaque sed quam amet numquam possimus qui voluptates provident optio doloremque doloribus quaerat consectetur nobis blanditiis. Atque omnis delectus nihil culpa quae itaque ullam aspernatur repellat.
+    </p>
+   
+</body>
+</html>
