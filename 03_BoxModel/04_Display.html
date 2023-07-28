@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display</title>
+    <style>
+        body{
+            background-color: #ccc;
+        }
+
+        .displayBlock{
+            display: block;
+        }
+
+        .displayInline{
+            display: inline;
+            background-color: rgb(179, 255, 0);
+        }
+
+        .displayInlineBlock{
+            background-color: aqua;
+            display: inline;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <!-- Esses elementos o comportamento padrao é block -->
+        <h1 class="displayBlock">Elemento 1</h1>
+        <h1>Elemento 2</h1>
+        <h1>Elemento 3</h1>
+        <h1>Elemento 4</h1>
+    </div>
+    <div>
+        <h1 class="displayInline">Elemento 1</h1>
+        <h1 class="displayInline">Elemento 2</h1>
+        <h1 class="displayInline">Elemento 3</h1>
+        <h1 class="displayInline">Elemento 4</h1>
+    </div>
+    <div>
+        <h1 class="displayInline">Elemento 1</h1>
+        <h1 class="displayInlineBlock">Elemento 2</h1>
+        <h1 class="displayInline">Elemento 3</h1>
+        <h1 class="displayInline">Elemento 4</h1>
+    </div>
+</body>
+</html>
