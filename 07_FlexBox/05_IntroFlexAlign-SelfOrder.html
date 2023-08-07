@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Intro FlexBox</title>
+
+    <style>
+
+        .flexbox{
+            height: 250px;
+            border: 3px solid red;
+            margin-bottom: 16px;
+            display: flex;
+            gap: 15px;
+        }
+
+        .flexbox div{
+            border: 2px solid orange;
+            background-color: yellow;
+            width: 50px;
+            height: 50px;
+            font-size: 36px;
+        }
+        
+        .flex-container1{
+            /* flex-direction: row-reverse; */
+            flex-direction: row;
+        }
+
+        .flex-container1 .div2{
+            /* order: 1; */
+            order: -1;
+            align-self: flex-end;
+        }
+
+        .flex-container1 .div3{
+            align-self: flex-end;
+        }
+       
+        
+
+        
+
+    </style>
+
+</head>
+<body>
+
+    <div class="flexbox flex-container1">
+        <div class="div1">1</div>
+        <div class="div2">2</div>
+        <div class="div3">3</div>
+        <div class="div4">4</div>
+    </div>
+
+</body>
+</html>
