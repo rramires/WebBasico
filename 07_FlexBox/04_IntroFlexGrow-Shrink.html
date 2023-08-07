@@ -12,7 +12,7 @@
             border: 3px solid red;
             margin-bottom: 16px;
             display: flex;
-            
+            gap: 15px;
         }
 
         .flexbox div{
@@ -20,27 +20,47 @@
             background-color: yellow;
             width: 50px;
             height: 50px;
-            margin: 5px;
         }
         
         .flex-container1{
-            justify-content: flex-end;
-            align-items: flex-start;
+            justify-content: center;
+            align-items: center;
         }
 
         .flex-container1 .div2{
-            flex-basis: 100px;
+            /* Aumenta mais que os outros default 0 */
+            flex-grow: 1;
+        }
+        .flex-container1 .div4{
+            flex-grow: 1.5;
+        }
+
+        .flex-container2 div{
+            width: 150px;
         }
 
         .flex-container2{
-            justify-content: flex-end;
-            align-items: flex-start;
-            flex-direction: column;
+            justify-content: center;
+            align-items: center;
         }
 
-        .flex-container2 .div2{
-            flex-basis: 100px;
+        .flex-container2 .div1{
+            /* Diminui mais que os outros default 0 */
+            flex-shrink: 3;
         }
+
+
+        .flex-container3{
+            justify-content: center;
+            align-items: center;
+        }
+
+        .flex-container3 .div3{
+            /* Grow, shrink e basis */
+            flex: 1 3 200px;
+        }
+
+        
 
     </style>
 
@@ -61,7 +81,12 @@
         <div class="div4">4</div>
     </div>
 
-    
+    <div class="flexbox flex-container3">
+        <div class="div1">1</div>
+        <div class="div2">2</div>
+        <div class="div3">3</div>
+        <div class="div4">4</div>
+    </div>
 
 </body>
 </html>
