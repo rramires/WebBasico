@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unidades de Medidas</title>
+</head>
+<style>
+    html{
+        /* 
+         Fixa em 62.5% para que 1em seja <=> 10px 
+         em resolução 100% / tamanho de fonte padrão do browser 
+        */
+        font-size: 62.5%; 
+    }
+    h1{
+        /* 2.4 <=> 24px */
+        font-size: 2.4em;
+    }
+    p{
+        /* 1.6 <=> 16px */
+        font-size: 1.6em;
+    }
+    b{
+        /* em herda o tamanho do elemento pai 
+        se a tag p tinha 16px, por ter 
+        herdado do html agora 2em é 32px */
+        color: red;
+        font-size: 2em;
+    }
+    strong{
+        /* rem = tamanho relativo a raiz (html) 
+           e não em relacão ao elemento pai 
+           no caso 2rem = 20px (62.5% no html)*/
+        font-size: 2rem;
+    }
+
+    .padding-em{
+        background-color: gray;
+    }
+
+    .padding-em p{
+        background-color: red;
+        margin: 0;
+        /* com em cresce ou diminui proporcional ao 
+           primeiro font-size que encontrar */
+        padding: 1em;
+        /* como esse é o primeiro font-size pega daqui a referencia */
+        font-size: 50px;
+    }
+    
+</style>
+<body>
+    <h1>Unidades de Medidas</h1>
+    <p>
+        <b>Lorem</b> ipsum <strong>dolor sit amet</strong> consectetur adipisicing elit. Nihil dolores soluta deserunt pariatur eveniet voluptatum corporis dolore laudantium quod! Provident deleniti reprehenderit temporibus. Qui, beatae.
+    </p>
+
+    <div class="padding-em">
+        <p>Padding com em</p>
+    </div>
+</body>
+</html>
