@@ -1,0 +1,65 @@
+html,
+body {
+    min-height: 100%;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #ccc;
+    background-image: url(../images/bg-2.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+/* Header */
+.hero{
+    padding: 1px;
+}
+.hero-content{
+    margin: 100px auto 0;
+    width: 80%;
+    color: white;
+    text-transform: uppercase;
+    text-align: center;
+}
+.hero-content h1{
+    font-size: 56px;
+    text-transform: uppercase;
+    text-shadow: 2px 2px 2px black;
+    margin-bottom: 0;
+}
+.hero-content p{
+    background-color: rgba(0, 0, 0, 0.7);
+    font-size: 18px;
+    padding: 16px;
+    display: inline-block;
+    border-bottom: 2px solid;
+}
+
+
+/* Main */
+
+.content-section{
+    width: 860px;
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+    padding: 16px;
+    gap: 16px;
+    background-color: white;
+}
+.card{
+    flex-basis: 250px;
+    flex-grow: 1;
+}
+.card img{
+    width: 100%;
+    display: block;
+}
+.card p{
+    background-color: #393535;
+    color: white;
+    margin: 0;
+    padding: 8px;
+}
