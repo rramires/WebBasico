@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Variáveis CSS</title>
+</head>
+<style>
+
+    :root{
+         /* Variaves */
+         --header-height: 15rem;
+         --main-color:rgba(255, 0, 0, 0.3);
+    }
+
+    html{
+        font-size: 62.5%;
+    }
+
+    header{
+        background-color: var(--main-color);
+        font-size: 2rem;
+        width: 100%;
+        height: var(--header-height);
+        position: fixed;
+        top: 0;
+        left: 0;
+    }
+
+    main{
+        min-height: calc(100vh - var(--header-height) - 2rem);
+        background-color: #ccc;
+        min-height: 100vh;
+        margin-top: var(--header-height);
+    }
+
+    footer{
+        background-color: var(--main-color);
+        height: 10rem;
+        font-size: 2rem;
+    }
+</style>
+<body>
+    <header>Header</header>
+    <main>Main</main>
+    <footer>Footer</footer>
+</body>
+</html>
