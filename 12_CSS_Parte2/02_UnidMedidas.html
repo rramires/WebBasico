@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unidades de Medidas</title>
+</head>
+<style>
+    html{
+        /* 
+         Fixa em 62.5% para que 1em seja <=> 10px 
+         em resolução 100% / tamanho de fonte padrão do browser 
+        */
+        font-size: 62.5%; 
+    }
+    
+    .viewport-container{
+        background-color: yellow;
+        /* 90% viewport width */
+        width: 90vw;
+        /* 90% viewport height */
+        height: 90vh;
+    }
+
+    .viewport{
+        background-color: red;
+
+        font-size: 3rem;
+        /* funciona pois o elemento pai tem largura e altura */
+        width: 90%;
+        height: 90%;
+    }
+    
+</style>
+<body>
+    <h1>Unidades de Medidas 2</h1>
+
+    <div class="porcentagem viewport-container">
+        <div class="viewport">
+            Viewport
+        </div>
+    </div>
+
+</body>
+</html>
