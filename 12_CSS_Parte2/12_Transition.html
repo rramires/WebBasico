@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transition</title>
+</head>
+<style>
+    div{
+        background-color: orange;
+        width: 200px;
+        height: 100px;
+        margin:  100px ;
+        /* properties or all */
+        /* transition-property: width, height; */
+        transition-property: width, height, background-color;
+        /* 0.5s 100ms, etc */
+        transition-duration: 0.5s, 1s;
+        /* linear, ease, easy-in easy-out, easy-in-out */
+        /* transition-timing-function: ease; */
+        /* Usar https://cubic-bezier.com/ */
+        transition-timing-function: cubic-bezier(.39,-0.77,.55,1.4);
+        /* Delay */
+        transition-delay: 1s;
+    }
+    div:hover{
+        width: 400px;
+        height: 200px;
+        background-color: red;
+    }
+</style>
+<body>
+    <div>
+
+    </div>
+</body>
+</html>
