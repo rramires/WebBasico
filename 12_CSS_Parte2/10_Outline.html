@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Outline</title>
+    <style>
+        div{
+            width: 200px;
+            height: 100px;
+        }
+        .div1{
+            background-color: yellow;
+            /* Border aumenta o tamanho do elemento */
+            border: 4px solid;
+        }
+        .div2{
+            background-color: orange;
+            /* Outline mantem o tamanho do elemento */
+            outline: 4px solid;
+        }
+        .div3{
+            background-color: orange;
+        }
+        .div3:hover{
+            /* Border aumenta o tamanho do elemento */
+            border: 4px solid;
+        }
+        .div4{
+            background-color: orange;
+        }
+        .div4:hover{
+            background-color: orange;
+            /* Outline mantem o tamanho do elemento */
+            outline: 4px solid;
+        }
+    </style>
+</head>
+<body>
+    <div class="div1">
+        Com border
+    </div>
+    <br>
+    <div class="div2">
+        Com outline
+    </div>
+    <br>
+    <div class="div3">
+        Hover com border pula
+    </div>
+    <br>
+    <div class="div4">
+        Hover com outline funciona
+    </div>
+</body>
+</html>
