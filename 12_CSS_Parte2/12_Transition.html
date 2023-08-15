@@ -6,7 +6,12 @@
     <title>Transition</title>
 </head>
 <style>
+    
+
     div{
+        /* variavel */
+        --anima: cubic-bezier(.39,-0.77,.55,1.4);
+
         background-color: orange;
         width: 200px;
         height: 100px;
@@ -19,9 +24,14 @@
         /* linear, ease, easy-in easy-out, easy-in-out */
         /* transition-timing-function: ease; */
         /* Usar https://cubic-bezier.com/ */
-        transition-timing-function: cubic-bezier(.39,-0.77,.55,1.4);
-        /* Delay */
-        transition-delay: 1s;
+        transition-timing-function: var(--anima);
+        /* Delay Zero necessita de unidade de medida "0s" */
+        transition-delay: 0s, 1s;
+        /* Abreviação transition (default values)
+        transition property(all) duration(0s) function(ease) delay(0s) */
+        transition: width 0.5s var(--anima), ease-in, 
+                    height 1s var(--anima) 0.3s,
+                    background-color 0.5s var(--anima)
     }
     div:hover{
         width: 400px;
