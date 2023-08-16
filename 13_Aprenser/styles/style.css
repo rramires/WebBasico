@@ -1,0 +1,107 @@
+:root{
+    --primay-color: #FED001;
+}
+
+/* Tags */
+
+html{
+    /* font-family: 'Inter', sans-serif;
+    font-size: 62.5%;
+    font-weight: 400; */
+    font: 400 62.5% 'Inter', sans-serif;
+}
+
+p, a{
+    font-size: 1.6rem;
+}
+
+h1{
+    font-size: 4.8rem;
+}
+
+nav a{
+    /* inherit - herda do elemento pai */
+    color: inherit;
+}
+
+.upper{
+    text-transform: uppercase;
+}
+
+.btn{
+    background-color: var(--primay-color);
+    border-radius: 4px;
+    font-size: 1.8rem;
+    text-decoration: none;
+    padding: 1.6rem 4.6rem;
+}
+
+
+/* Wrapper Containers */
+.wrapperContainer-dark{
+    background-color: #2a2a2a;
+    color: #fafafa;
+}
+
+.wrapperContainer-hero{
+    background-image: linear-gradient(white, rgb(255, 255, 40));
+}
+
+.wrapperContainer-light{
+    background-color: #fafafa;
+}
+
+.wrapperContainer-dark2{
+    background-color: #003464;
+    color: #fafafa;
+}
+
+.container{
+    max-width: 127.6rem;
+    margin: auto;
+}
+
+
+/* Header */
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: var(--primay-color);
+    padding: 2rem 0;
+}
+
+.header_nav ul{
+    display: flex;
+    gap: 0.5rem;
+    list-style-type: none;
+}
+
+.header_nav a{
+    padding: 0.75em 1.15em;
+    border: solid 1px;
+    text-decoration: none;
+}
+
+.header_nav a:hover{
+    background-color: black;
+}
+
+
+/* Hero */
+.heroBanner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20rem;
+}
+
+.header_content{
+    display: flex;
+    flex-direction: column;
+    gap: 6rem;
+}
+
+.header_content a{
+    width: 9.5rem;
+}
