@@ -2,6 +2,7 @@
     --primay-color: #FED001;
 }
 
+
 /* Tags */
 
 html{
@@ -18,6 +19,15 @@ p, a{
 h1{
     font-size: 4.8rem;
 }
+
+h2{
+    font-size: 4rem;
+}
+
+h2{
+    font-size: 3.2rem;
+}
+
 
 nav a{
     /* inherit - herda do elemento pai */
@@ -38,6 +48,10 @@ nav a{
 
 
 /* Wrapper Containers */
+.wrapperContainer{
+    overflow: hidden;
+}
+
 .wrapperContainer-dark{
     background-color: #2a2a2a;
     color: #fafafa;
@@ -61,8 +75,14 @@ nav a{
     margin: auto;
 }
 
+.section_title{
+    margin: 0;
+    padding: 7rem 0;
+    text-align: center;
+}
 
-/* Header */
+
+/* Wrapper 1 - Header */
 .header{
     display: flex;
     justify-content: space-between;
@@ -88,7 +108,7 @@ nav a{
 }
 
 
-/* Hero */
+/* Wrapper 2 - Hero */
 .heroBanner{
     display: flex;
     justify-content: space-between;
@@ -105,3 +125,56 @@ nav a{
 .header_content a{
     width: 9.5rem;
 }
+
+.btn{
+    color: inherit;
+    display: inline-block;
+}
+
+.section_btn{
+    margin: 5.5rem 0;
+}
+
+
+/* Wrapper 3 - Cursos */
+.cursos{    
+    text-align: center;
+}
+
+.cursosContainer{
+    display: flex;
+    text-align: left;
+    gap: 1.6rem;
+}
+
+.cursos_card{
+    /* Resolve as diferentes larguras dos cards /
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 0; 
+    Atalho abaixo para essas 3 propriedades e valores */
+    flex: 1;
+}
+
+.cursos_card img{
+    display: block;
+    width: 100%;
+}
+
+.cursos_card h3{
+    font-size: 2.4rem;
+}
+
+.cursos_card p{
+    font-size: 1.8rem;
+    line-height: 1.5;
+}
+
+.cursos_card_content{
+    padding: 1rem 1.25rem;
+    /* border */
+    border: 1px solid #ccc;
+    border-radius: 0 0 8px 8px;
+    border-top: transparent;
+}
+
