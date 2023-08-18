@@ -57,6 +57,17 @@ nav a{
     color: #fafafa;
 }
 
+.wrapperContainerFixed{
+    /* Faz o menu flutuar */
+    position: sticky;
+    top: 0;
+}
+
+.wrapperContainerPadded{
+    /* Paddind top para posicionar o scroll */
+    padding-top: 7.3rem;
+}
+
 .wrapperContainer-hero{
     background-image: linear-gradient(white, rgb(255, 255, 40));
 }
