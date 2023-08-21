@@ -1,0 +1,179 @@
+
+/* Variables */
+:root{
+    /* Fonts */
+    --font-roboto: "Roboto", tahoma, arial, sans-serif;
+    --font-viaoda: 'Viaoda Libre', cursive;
+
+    /* Colors */
+    --body-bg: #202020;
+    --wrapper-bg: #F0F0F0;
+    --menu-color: #425564;
+
+}
+
+
+/* CSS Reset */
+*{
+	margin: 0;
+	padding: 0;
+	border: 0;
+	list-style: none;
+}
+
+/* Tags */
+html{
+    font-size: 62.5%;
+}
+
+body{
+    background-color: var(--body-bg);
+    font-family: var(--font-roboto);
+}
+
+/* Wrapper */
+.wrapper{
+    background-color: var(--wrapper-bg);
+    /* measurements */
+    width: 128rem;
+    /* spacing */
+    margin: auto;
+    padding: 1.5rem;
+}
+
+/* Header */
+.header{
+    background-color: #162028;
+    /* measurements */
+    height: 6.4rem;
+    /* align */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* spacing */
+    padding-left: 17rem;
+    padding-right: 4.5rem;
+}
+
+.header h1{
+    font-family: var(--font-viaoda);
+    font-weight: normal;
+    font-size: 3.5rem;
+    color: white;
+}
+
+.header-nav{
+    /* align */
+    display: flex;
+    /* spacing */
+    gap: 7rem;
+}
+
+.header-nav a {
+    color: var(--menu-color);
+    font-size: 1.2rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: .2rem;
+    padding: 1.5rem;
+}
+
+.header-nav a:hover {
+    outline: 1px solid var(--menu-color);
+}
+
+
+/* Banner */
+.banner{
+    background-image: url(../images/topo.jpg);
+    background-size: contain;
+    height: 61rem;
+}
+
+
+/* Main */
+
+/* Description 1 */
+.description1{
+    padding: 6rem 10rem;
+    background-color: white;
+    text-align: center;
+}
+
+.description1 h1{
+    padding-bottom: 4rem;
+    font-family: var(--font-viaoda);
+    font-size: 4rem;
+    color: black;
+}
+
+.description1 p{
+    font-size: 1.6rem;
+    line-height: 2;
+    color: #555;
+}
+
+/* Gallery */
+.gallery{
+    display: flex;
+    justify-content: space-between;
+    padding: 6rem 10rem;
+    background-color: white;
+}
+
+.gallery-card {
+    text-align: center;
+    gap: 10px;
+}
+
+.gallery-card h2{
+    font-size: 1.4rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: .2rem;
+    padding: 1.2rem;
+}
+
+.gallery-card p{
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    letter-spacing: .2rem;
+}
+
+/* Description 2 */
+.description2{
+    padding: 6rem 10rem;
+    background-color: #003D52;
+    background-image: url(../images/bg_detalhe.png);
+    background-position: right bottom;
+    background-repeat: no-repeat;
+}
+
+.description2 h2{
+    font-family: var(--font-viaoda);
+    text-transform: uppercase;
+    font-weight: normal;
+    font-size: 6rem;
+    color: white;
+    padding: 6rem 0;
+}
+
+.description2 p{
+    line-height: 1.5;
+    width: 70%;
+    font-size: 1.8rem;
+    color: white;
+}
+
+
+/* Footer */
+.footer{
+    background: #0b171f;
+    padding: 3rem;
+    text-align: center;
+    color: white;
+    font-size: 1.6rem;
+    letter-spacing: 0.2em;
+}
+
+
