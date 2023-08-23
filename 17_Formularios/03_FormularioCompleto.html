@@ -6,7 +6,7 @@
     <title>Formulario Completo</title>
 </head>
 <body>
-    <form action="">
+    <form action="#" method="get">
         <fieldset>
             <legend>Introdução</legend>
 
@@ -30,12 +30,24 @@
 
             <label for="data">Possui atividade extra?</label>
             <br>
-                    <!-- Use label para poder clicar no texto -->
-                    <!-- Faz o group pelo mesmo name -->
-                    <label><input type="radio" name="atvExtra">Sim</label>    
-                    <label><input type="radio" name="atvExtra">Não</label> 
+                <!-- Use label para poder clicar no texto -->
+                <!-- Faz o group pelo mesmo name -->
+                <label><input type="radio" name="atvExtra" value="S">Sim</label>    
+                <label><input type="radio" name="atvExtra" value="N">Não</label> 
             <br>
             <br>
+
+            <fieldset>
+                <legend>Área de Interesse</legend>
+
+                <label for="data">Quais suas tecnologias favoritas</label>
+                <br>
+                    <label><input type="checkbox" name="areaHtml" value="S">HTML</label>    
+                    <label><input type="checkbox" name="areaCSS" value="S">CSS</label>  
+                    <label><input type="checkbox" name="areaJavascript" value="S">Javascript</label>  
+                <br>
+                <br>
+            </fieldset>
 
             <input type="submit" value="Enviar">
         </fieldset>
