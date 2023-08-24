@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meter e Progress</title>
+</head>
+<body>
+    <h1>Meter</h1>
+    <label for="nivel">Nível de combustível:</label>
+    <br>
+    <meter id="nivel"
+           min="0"
+           max="100"
+           low="30"
+           high="80"
+           optimum="20"
+           value="81">
+    </meter>
+
+    <h1>Progress</h1>
+    <label for="pct">Porcentagem de conclusão:</label>
+    <br>
+    <!-- texto entre a tag é fallback(reserva), 
+        aparece se o browser não tiver suporte -->
+    <progress id="pct" 
+              max="100" 
+              value="50">50%</progress>
+</body>
+</html>
