@@ -6,7 +6,7 @@
     <title>Formulario Completo</title>
 </head>
 <body>
-    <form action="#" method="get">
+    <form action="" method="get">
         <fieldset>
             <legend>Introdução</legend>
 
@@ -47,6 +47,57 @@
                     <label><input type="checkbox" name="areaJavascript" value="S">Javascript</label>  
                 <br>
                 <br>
+
+                <label>Selecione uma linguagem<br>
+                    <select name="linguagem">
+                        <option value="">Selecione:</option>
+
+                        <optgroup label="Frontend:">
+                            <option value="html">HTML</option>
+                            <option value="css">CSS</option>
+                        </optgroup>
+
+                        <optgroup label="Backend:">
+                            <option value="java">JAVA</option>
+                            <option value="php">PHP</option>
+                            <option value="python">Python</option>
+                        </optgroup>
+                        
+                    </select>
+                </label>
+                <br>
+                <br>
+
+                <label>Selecione uma linguagem (multiple)<br>
+                    <select name="linguagem" size="8" multiple>
+                        <option value="">Selecione:</option>
+
+                        <optgroup label="Frontend:">
+                            <option value="html">HTML</option>
+                            <option value="css">CSS</option>
+                        </optgroup>
+
+                        <optgroup label="Backend:">
+                            <option value="java">JAVA</option>
+                            <option value="php">PHP</option>
+                            <option value="python">Python</option>
+                        </optgroup>
+                        
+                    </select>
+                </label>
+                <br>
+                <br>
+
+                <input type="text" list="linguagemList">
+
+                <datalist id="linguagemList" required>
+                    <option value="HTML">
+                    <option value="CSS">
+                    <option value="Java">
+                    <option value="PHP">
+                    <option value="Python">
+                </datalist>
+
             </fieldset>
 
             <input type="submit" value="Enviar">
