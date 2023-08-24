@@ -18,13 +18,14 @@
            value="81">
     </meter>
 
-    <h1>Progress</h1>
-    <label for="pct">Porcentagem de conclusão:</label>
+    <h1>Output</h1>
     <br>
-    <!-- texto entre a tag é fallback(reserva), 
-        aparece se o browser não tiver suporte -->
-    <progress id="pct" 
-              max="100" 
-              value="50">50%</progress>
+    <form oninput="result.value = n1.value * n2.value">
+        <input type="number" step="0.5" name="n1", id="n1">
+        <input type="number" name="n2", id="n2">
+        =
+        <output name="result" for="n1 n2">0</output>
+    </form>
+
 </body>
 </html>
