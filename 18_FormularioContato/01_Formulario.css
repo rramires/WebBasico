@@ -1,3 +1,5 @@
+/* Formatação visual */
+
 html{
     background-color: #181818;
     font-family: Arial, Helvetica, sans-serif;
@@ -39,6 +41,7 @@ input, textarea{
     padding: 10px;
     margin: 10px 0 5px;
     color: white;
+    outline: 0;
 }
 
 legend{
@@ -57,3 +60,32 @@ legend{
     font-size: 16px;
     border: none;
 }
+
+/* Efeitos */
+
+/* input:invalid, textarea:invalid{
+    background-color: red;
+} */
+
+
+/* input:valid, textarea:valid{
+    background-color: green;
+} */
+
+/* Foco invalido */
+input:invalid:focus, textarea:invalid:focus{
+    border-bottom: 2px solid #ff000d;
+} 
+
+input:valid:focus, textarea:valid:focus{
+    border-bottom: 2px solid #0ec72a;
+} 
+
+/* Foco */
+input:focus, textarea:focus{
+    border-bottom: 2px solid #8e999a;
+    background-color: #2a2727;
+}
+
+
+
