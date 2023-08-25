@@ -1,0 +1,50 @@
+:root{
+    --blue-color:  #3a68b7;
+    --font: 'Roboto', sans-serif;
+}
+
+html{
+    font-size: 62.5%;
+    background-color: var(--blue-color);
+    font-family: var(--font);
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.form{
+    width: 90%;
+    min-width: 45rem;
+    max-width: 64rem;
+    background-color: white;
+    border-left: 1rem solid rgba(0, 0, 0, 0.2); 
+    padding: 1.5rem;
+}
+
+.form fieldset{
+    display: flex;
+    flex-direction: column;
+    border: none;
+    gap: 1rem;
+}
+
+.form legend{
+    font-size: 3.2rem;
+    color: var(--blue-color);
+}
+
+.form legend{
+    font-size: 3.2rem;
+    color: var(--blue-color);
+}
+
+.form #bottom{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
