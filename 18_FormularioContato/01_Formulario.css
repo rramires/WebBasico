@@ -1,0 +1,59 @@
+html{
+    background-color: #181818;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+form{
+    width: 90%;
+    min-width: 450px;
+    max-width: 560px;
+    padding: 10px;
+    background-color: #0e1010;
+}
+
+fieldset{
+    padding: 0;
+    margin: 0;
+    border: none;
+}
+
+label, input, textarea{
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+input, textarea{
+    background-color: rgba(0, 0, 0, 0.3);
+    border: 2px solid transparent;
+    border-bottom-color: #bbb;
+    padding: 10px;
+    margin: 10px 0 5px;
+    color: white;
+}
+
+legend{
+    padding: 5px;
+    font-size: 24px;
+    color: #8e999a;
+    font-weight: bold;
+    text-align: center;
+}
+
+.btn{
+    background-color: #2a2727;
+    color: white;
+    cursor: pointer;
+    padding: 8px;
+    font-size: 16px;
+    border: none;
+}
