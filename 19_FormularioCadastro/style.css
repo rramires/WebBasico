@@ -5,25 +5,26 @@
 
 html{
     font-size: 62.5%;
-    background-color: var(--blue-color);
-    font-family: var(--font);
 }
 
 body{
+    background-color: var(--blue-color);
     display: flex;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
     margin: 0;
+    font-family: var(--font);
 }
 
 .form{
     width: 90%;
     min-width: 45rem;
     max-width: 64rem;
-    background-color: white;
-    border-left: 1rem solid rgba(0, 0, 0, 0.2); 
     padding: 1.5rem;
+    /* background-color: white;
+    border-left: 1rem solid rgba(0, 0, 0, 0.2);  */
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.3) 1rem, white 1rem);    
 }
 
 .form fieldset{
@@ -43,9 +44,25 @@ body{
     color: var(--blue-color);
 }
 
+.form label{
+    padding-top: 1rem;
+    font-size: 1.2rem;
+    letter-spacing: 0.2px;
+    text-transform: uppercase;
+}
+
 .form input{
+    border-radius: 0;
     border: none;
     border-bottom: 1px solid var(--blue-color);
+    outline: none;
+    transition: padding-left 0.3s;
+}
+
+
+.form input:focus{
+    outline: 2px solid var(--blue-color);
+    padding-left: 0.8rem;
 }
 
 .form #bottom{
