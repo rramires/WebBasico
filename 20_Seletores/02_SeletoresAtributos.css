@@ -1,0 +1,21 @@
+/* Todos que tem href="#" E não tem a classe .link-ok */
+a[href="#"]:not(.link-ok){
+    color: red;
+    opacity: 0.2;
+}
+
+/* ^ Todos que começam com http */
+a[href^="http"]{
+    color: green;
+}
+
+/* $ Todos que terminam com .txt */
+a[href$=".txt"]{
+    color: orange;
+}
+
+/* a[target="_blank"] Todos que tem o target="_blank" */
+/* $ Todos que tem o target */
+a[target]{
+    text-decoration: none;
+}
