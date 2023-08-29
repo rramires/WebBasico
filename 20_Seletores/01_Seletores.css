@@ -1,0 +1,35 @@
+article{
+    outline: 2px solid green;
+}
+
+article a{
+    color: red;
+}
+
+/* a > b = B é filho direto de A */
+article a > b{
+    color: green;
+}
+
+/* h3 + p | + Só P o imediatamente após (sem nada entre eles) */
+h3 + p{
+    background-color: yellow;
+}
+
+/* h3 ~ p | ~ Todos os elementos P após */
+h3 ~ p{
+    border: 2px dashed orange;
+}
+
+/* pegando diretamente a classe */
+.destaque{
+    padding-left: 50px;
+}
+
+/* Negação da condição - Todos que não possuem a classe destaque */
+article p:not(.destaque){
+    background-color: #ccc;
+}
+
+
+
