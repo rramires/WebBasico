@@ -1,0 +1,51 @@
+/* Com espaço entre os seletores - seleciona o primeiro elemento das divs */
+div :first-child{
+    color: red;
+}
+
+/* Sem espaço - Seleciona o ultimo elemento, se for um parágrafo 
+   neste caso ignora o h3 por não ser P */
+p:last-child{
+    color: orange;
+}
+
+/* Pega pelo numero - Começa com 1 = priemiro elemento */
+p:nth-child(2){
+    color: green;
+}
+
+/* Pega o primeiro filho do tipo P 
+   mesmo tendo outros elementos antes */
+p:first-of-type{
+    background-color: yellow;
+}
+
+/* Pega o ultimo filho do tipo P 
+   mesmo tendo outros elementos depois */
+p:last-of-type{
+    background-color: grey;
+}
+
+/* N do tipo P */
+p:nth-of-type(2){
+    text-decoration: underline;
+}
+
+ul{
+    padding-left: 0;
+}
+
+li{
+    list-style-type: none;
+}
+
+li:nth-child(odd){
+    background-color: gray;
+}
+
+li:nth-child(even){
+    background-color: wheat
+}
+
+
+
