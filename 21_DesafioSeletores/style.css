@@ -3,9 +3,9 @@ a[target]::after{
     padding-left: 4px;
 }
 
-a:not([target])::before{
+a[href$=".pdf"]::before{
     content: url(imagens/pdf-icon.gif);
-    padding-right: 4px;
+    margin-right: 4px;
 }
 
 input[id="chk1"]:checked + label{
