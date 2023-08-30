@@ -1,0 +1,43 @@
+p::before{
+    content: "ANTES";
+}
+
+p::after{
+    content: "DEPOIS";
+}
+
+div{
+    border: 3px solid red;
+    padding: 1em;
+    position: relative;
+}
+
+/* div::before{
+    content: "";
+    width: 20px;
+    height: 20px;
+    background-color: red;
+    display: block;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+} */
+
+/* div::after{
+    content: url(stop_icon.png);
+    width: 20px;
+    height: 20px;
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+} */
+
+div::before{
+    content: url(stop_icon.png);
+    width: 32px;
+    height: 32px;
+    background-color: gray;
+    float: left;
+    margin-right: 1em;
+}
