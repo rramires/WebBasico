@@ -39,13 +39,21 @@ li{
     list-style-type: none;
 }
 
-li:nth-child(odd){
+ul[alternate] li:nth-child(odd){
     background-color: gray;
 }
 
-li:nth-child(even){
-    background-color: wheat
+ul[alternate] li:nth-child(even){
+    background-color: wheat;
 }
 
+/* Xn expression */
+ul[jumping] li:nth-child(3n -2){
+    background-color: grey;
+}
 
+/* Xn expression + not */
+ul[jumping] li:not(:nth-child(3n -2)){
+    background-color: wheat;
+}
 
