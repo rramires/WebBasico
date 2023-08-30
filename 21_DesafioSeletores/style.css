@@ -1,0 +1,25 @@
+a[target]::after{
+    content: url(imagens/newWindow-icon.png);
+    padding-left: 4px;
+}
+
+a:not([target])::before{
+    content: url(imagens/pdf-icon.gif);
+    padding-right: 4px;
+}
+
+input[id="chk1"]:checked + label{
+    color: green;
+}
+
+input[id="chk1"]:not(:checked) + label{
+    color: red;
+}
+
+input[id="chk2"]:disabled + label{
+    color: blue;
+}
+
+ol ul li:nth-of-type(3){
+    background-color: gray;
+}
