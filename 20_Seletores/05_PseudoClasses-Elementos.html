@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PseudoClasses e Elementos</title>
+    <link rel="stylesheet" href="05_PseudoClasses-Elementos.css">
+</head>
+<body>
+    
+    <button>Entrar</button>
+    <br>
+    <br>
+    <button disabled>Entrar disabled</button>
+    <br>
+    <br>
+
+    <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto sapiente porro dolores similique nobis illum!
+    </p>
+
+    <p>
+        <!-- empty pega só o de baixo, pois não tem espaço nem nada -->
+    </p>
+    <p></p>
+    <br>
+    <br>
+
+    <ul>
+        <li><a href="#">Link Falso</a></li>
+        <li><a href="#">Link Falso</a></li>
+        <li><a href="#">Link Falso</a></li>
+        <li><a href="#">Link Falso</a></li>
+    </ul>           
+    
+    <!-- tabindex="0" entra na ordem "natural" -->
+    <p tabindex="0">
+        Lorem ipsum dolor sit amet.
+    </p>
+    <!-- tabindex="1" pega ele primeiro" -->
+    <p tabindex="1">
+        Lorem ipsum dolor sit amet.
+    </p>
+    <p tabindex="0">
+        Lorem ipsum dolor sit amet.
+    </p>
+    <p tabindex="0">
+        Lorem ipsum dolor sit amet.
+    </p>
+    <br>
+    <br>
+
+    <form action="#">
+        <input type="text" value="valor inicial"><br><br>
+        <input type="text" value="valor" disabled><br><br>
+        <input type="text" value="valor" readonly><br><br>
+        <input type="text" placeholder="placeholder">
+    </form>
+    <br>
+    <br>
+
+</body>
+</html>

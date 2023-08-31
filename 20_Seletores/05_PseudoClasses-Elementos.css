@@ -1,0 +1,51 @@
+button{
+    background-color: #888;
+    color: white;
+    border: none;
+    padding: 16px;
+    margin-bottom: 8px;
+}
+
+
+button:disabled{
+    opacity:  0.5;
+}
+
+p:empty::before{
+    content: "Parágrafo vazio";
+}
+
+a:focus, a:hover{
+    background-color: yellow;
+}
+
+/* read-write pega só os que se pode ler e escrever */
+input[type="text"]:read-write{
+    background-color: #999;
+    border: none;
+    padding: 5px;
+}
+
+/* read-only os que estão somente leitura (disabled e readonly) */
+input[type="text"]:read-only{
+    border: 1px solid red;
+}
+
+/* da pra usar com o not também */
+/* input[type="text"]:read-only:not(:disabled){
+    border: 1px solid red;
+} */
+
+/* read-only os que estão somente disabled */
+input[type="text"]:disabled{
+    background-color: aqua;
+}
+
+input[type="text"]::placeholder{
+    color: blue;
+}
+
+/* quando o placeholder estiver sendo exibido */
+input[type="text"]:placeholder-shown{
+    background-color: wheat;
+}
