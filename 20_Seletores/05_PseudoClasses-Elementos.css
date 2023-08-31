@@ -63,3 +63,31 @@ p:read-write{
 div:target{
     border: 2px dashed orange;
 }
+
+
+.paragrafos p::first-letter{
+    font-size: 30px;
+    color: red;
+    float: left;
+    margin-right: 1px;
+}
+
+.paragrafos p::first-line{
+    color: blue
+}
+
+/* muda a cor da seleção de texto */
+::selection{
+    background-color: blueviolet;
+}
+
+/* elemento A que está dentro de um P */
+p a{
+    color: red;
+    background-color: wheat;
+}
+
+/* elemento P que contém A */
+p:has(a){
+    color: green;
+}
