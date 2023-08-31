@@ -49,3 +49,17 @@ input[type="text"]::placeholder{
 input[type="text"]:placeholder-shown{
     background-color: wheat;
 }
+
+/* somente filho único */
+p:only-child{
+    background-color: orange;
+}
+
+
+p:read-write{
+    border-bottom: 2px solid red;
+}
+
+div:target{
+    border: 2px dashed orange;
+}
