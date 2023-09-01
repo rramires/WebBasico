@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transform Translate</title>
+    <style>
+
+        div{
+            outline: 1px solid #888;
+            width: 300px;
+            margin: 10px auto;
+        }
+
+        p{
+            width: 50%;
+        }
+
+        .destaque{
+            background-color: yellow;
+        }
+
+        /* *** Caso use % porcentagem é relativo ao próprio elemento */
+        .div1 .destaque{
+            /* transform: translateX(50px); */
+            /* transform: translateX(-50px); */
+            /* transform: translateY(30px); */
+            /* transform: translateY(-30px); */
+            /* X, Y ao mesmo tempo */
+            transform: translate(100px, 50px);
+        }
+
+        /* Via position é mesma coisa que transform: translate(100px, 50px); */
+        /* *** Caso use % porcentagem é relativo ao elemento pai */
+        .div2 .destaque{
+            position: relative;
+            left: 100px; /* X */
+            top: 50px; /* Y */
+        }
+
+    </style>
+</head>
+<body>
+    
+    <div class="div1">
+
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione, eius?</p>
+        <p class="destaque">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione, eius?</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione, eius?</p>
+
+    </div>
+
+    <div class="div2">
+
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione, eius?</p>
+        <p class="destaque">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione, eius?</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione, eius?</p>
+
+    </div>
+
+</body>
+</html>
