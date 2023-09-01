@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transform Translate</title>
+    <style>
+
+        div{
+            outline: 1px solid #888;
+            width: 400px;
+            margin: 10px auto;
+        }
+
+        p{
+            width: 50%;
+        }
+
+        .destaque{
+            background-color: yellow;
+        }
+
+        
+        .div1 .destaque{
+           /* transform: rotate(15deg); */
+           transform: rotate(-15deg);
+        }
+
+        .div2 .destaque{
+            /* transform: scale(30%); */
+            /* transform: scale(150%); */
+            /* transform: scale(.3); */
+            /* transform: scale(1.5); */
+            /* transform: scaleX(1.5); */
+            transform: scaleY(.5);
+        }
+
+        .div3 .destaque{
+            /* transform: skewX(30deg); */
+            /* transform: skewY(10deg); */
+            transform: skew(20deg); /* X */
+            transform: skew(20deg, 45deg); /* X, Y */
+        }
+
+    </style>
+</head>
+<body>
+    
+    <div class="div1">
+
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione, eius?</p>
+        <p class="destaque">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione, eius?</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione, eius?</p>
+
+    </div>
+
+    <div class="div2">
+
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione, eius?</p>
+        <p class="destaque">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione, eius?</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione, eius?</p>
+
+    </div>
+
+    <div class="div3">
+
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione, eius?</p>
+        <p class="destaque">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione, eius?</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione, eius?</p>
+
+    </div>
+
+</body>
+</html>
