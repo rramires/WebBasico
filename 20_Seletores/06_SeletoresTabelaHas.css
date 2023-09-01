@@ -1,0 +1,38 @@
+table{
+    border-collapse: collapse;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+td, th{
+    border-bottom: 1px solid #ddd;
+    padding: 5px;
+}
+
+th{
+    background-color: #f2f2f2;
+    text-align: left;
+}
+
+tr:nth-child(even){
+    background-color: #f9f9f9;
+}
+
+tr:nth-child(odd){
+    background-color: wheat;
+}
+
+tr:hover{
+    background-color: #e9e9e9;
+}
+
+/* Seleciona a TR que contém o checkbox selecionado */
+/* #tabela tr:has(input[type="checkbox"]:checked){
+    background-color: #aaffaa;
+}  */
+
+/* Seleciona a TR que contém o checkbox selecionado 
+   Somente na primeira coluna( TD first-child de TR) */
+#tabela tr:has(td:first-child input[type="checkbox"]:checked){
+    background-color: #aaffaa;
+} 
