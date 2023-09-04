@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transform Multiplo</title>
+    <style>
+
+        div{
+            outline: 1px solid #888;
+            width: 300px;
+            margin: 10px auto;
+        }
+
+        p{
+            width: 50%;
+        }
+
+        .destaque{
+            background-color: yellow;
+        }
+
+        
+        .div1 .destaque{
+            transform: translate(100px) rotate(45deg);
+        }
+
+        /* A ordem das funcoes importa */
+        .div2 .destaque{
+            transform: rotate(45deg) translate(100px);
+        }
+
+         /* Muda o ponto de origem que por default é o centro */
+         .div3 .destaque{
+            transform-origin: left top;
+            /* possivel usar valores */
+            /* transform-origin: 0 100%; */
+            /* e misturar */
+            /* transform-origin: 50px top;  */
+            transform: rotate(45deg);
+        }
+
+    </style>
+</head>
+<body>
+    
+    <div class="div1">
+
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione, eius?</p>
+        <p class="destaque">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione, eius?</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione, eius?</p>
+
+    </div>
+
+    <div class="div2">
+
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione, eius?</p>
+        <p class="destaque">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione, eius?</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione, eius?</p>
+
+    </div>
+
+    <div class="div3">
+
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione, eius?</p>
+        <p class="destaque">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione, eius?</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione, eius?</p>
+
+    </div>
+
+</body>
+</html>
