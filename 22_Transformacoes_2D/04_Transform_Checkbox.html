@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transform Checkbox</title>
+</head>
+<style>
+
+    /* ----------- Primeiros checks ------------- */
+
+    /* Ao tentar formatar o ckeckbox */
+    .chk1{
+        display: none;
+        /* width: 100px; */
+        /* height: 100px; */
+        /* Algumas propriedades não funcionam/existem ex: */
+        /* background-color: red;
+        border: 2px dashed blue; */
+    }
+
+    /* o Xunxo é esconder o checkbox(acima) colocar uma spam e configurar */
+    .chk1 + label span{
+        display: inline-block;
+        font-size: 26px;
+        width: 1em;
+        height: 1em;
+        background-color: red;
+    }
+
+    .chk1:checked + label span{
+        background-color: blue;
+        position: relative;
+    }
+
+    .chk1:checked + label span::before{
+        content: "";
+        display: block;
+        position: absolute;
+        border: .12em solid white;
+        top: 0.08em;
+        left: 0.3em;
+        right: 0.3em;
+        bottom: 0.3em;
+        transform: rotate(45deg);
+        border-left: none;
+        border-top: none;
+    }
+
+    /* ----------- Segundos checks ------------- */
+
+    .lbl1 input[type="checkbox"]{
+        display: none;
+    }
+
+    .lbl1 span{
+        display: inline-block;
+        font-size: 26px;
+        width: 1em;
+        height: 1em;
+        background-color: red;
+    }
+
+    .lbl1:has([type="checkbox"]:checked) span {
+        background-color: blue;
+        position: relative;
+    }
+
+    .lbl1:has([type="checkbox"]:checked) span::before {
+        content: "";
+        display: block;
+        position: absolute;
+        border: .12em solid white;
+        top: 0.08em;
+        left: 0.3em;
+        right: 0.3em;
+        bottom: 0.3em;
+        transform: rotate(45deg);
+        border-left: none;
+        border-top: none;
+    }
+
+
+</style>
+<body>
+    
+    <h1>Checkbox</h1>
+
+    <input class="chk1" type="checkbox" id="html" checked>
+    <label for="html">
+        <span></span>
+        HTML
+    </label>
+
+    <input class="chk1" type="checkbox" id="css">
+    <label for="css">
+        <span></span>
+        CSS
+    </label>
+
+    <input class="chk1" type="checkbox" id="js">
+    <label for="Javascript">
+        <span></span>
+        Javascript
+    </label>
+    <br>
+    <hr>
+    <br>
+
+    <label class="lbl1">
+        <input type="checkbox" checked>
+        <span></span>
+        HTML
+    </label>
+    
+    <label class="lbl1">
+        <input type="checkbox">
+        <span></span>
+        CSS
+    </label>
+
+    <label class="lbl1">
+        <input type="checkbox">
+        <span></span>
+        Javascript
+    </label>
+   
+
+</body>
+</html>
