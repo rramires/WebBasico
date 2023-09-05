@@ -80,6 +80,55 @@
         border-top: none;
     }
 
+    /* ----------- Terceiros checks ------------- */
+
+    .switch{
+        --switch-color: #cfd8dc;
+    }
+
+    .switch span{
+        display: inline-block;
+        width: 2em;
+        height: 1em;
+        border-radius: 1em;
+        outline: 2px solid var(--switch-color);
+        overflow: hidden;
+    }
+
+    .switch span::after{
+        content: "";
+        display: block;
+        width: 1em;
+        height: 1em;
+        border-radius: 50%;
+        background-color: var(--switch-color);
+        transform: translateX(0);
+        transition: transform 0.2s ease-in-out;
+    }
+
+    .switch input:focus + span{
+        outline: 2px solid black;
+        outline-offset: 2px;
+    }
+    
+    .switch input{
+        /* O none funciona, mas tira a acessibilidade */
+        /* display: none; */
+        /* então */
+        width: 1px;
+        height: 1px;
+        padding: 0;
+        margin: 0;
+        overflow: hidden;
+        position: absolute;
+        outline: none;
+    }
+
+    .switch input:checked + span::after{
+        transform: translateX(100%);
+    }
+
+    
 
 </style>
 <body>
@@ -124,7 +173,27 @@
         <span></span>
         Javascript
     </label>
-   
+    <br>
+    <hr>
+    <br>
+
+    <label class="switch">
+        <input type="checkbox" checked>
+        <span></span>
+        HTML
+    </label>
+    
+    <label class="switch">
+        <input type="checkbox">
+        <span></span>
+        CSS
+    </label>
+
+    <label class="switch">
+        <input type="checkbox">
+        <span></span>
+        Javascript
+    </label>
 
 </body>
 </html>
