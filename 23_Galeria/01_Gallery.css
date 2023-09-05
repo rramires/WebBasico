@@ -27,6 +27,7 @@ body{
 h1{
     text-align: center;
     font-size: 3rem;
+    padding-bottom: 2rem;
 }
 
 .gallery{
@@ -37,20 +38,44 @@ h1{
     width: 96rem;
     gap: 1rem;
     padding: 1.2rem;
+    box-shadow: 3px 3px 15px #333;
 }
 
 .image{
     width: 22.8rem;
     background-color: bisque;
     align-items: center;
+    overflow: hidden;
 }
 
 .image img{
     width: 100%;
-    display: block;
+    height: 100%;
+    /* animacao */
+    transform: scale(1);
+    transition: 0.2s;
+}
+
+.image img:hover{
+    /* animacao */
+    transform: scale(1.25);
 }
 
 .image p{
     width: 100%;
+    color: white;
+    font-size: 1.2rem;
     text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 1rem 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    /* animacao */
+    transform: translateY(0);
+    transition: 0.2s;
+}
+
+.image:has(img:hover) p{
+    /* animacao */
+    transform: translateY(-3.2rem);
 }
