@@ -43,9 +43,13 @@ h1{
 
 .image{
     width: 22.8rem;
-    background-color: bisque;
+    background-color: black;
     align-items: center;
     overflow: hidden;
+}
+
+.image a{
+    text-decoration: none;
 }
 
 .image img{
@@ -53,12 +57,14 @@ h1{
     height: 100%;
     /* animacao */
     transform: scale(1);
-    transition: 0.2s;
+    transition: 0.2s;  
+    opacity: 0.5;
 }
 
 .image img:hover{
     /* animacao */
-    transform: scale(1.25);
+    transform: scale(1.25); 
+    opacity: 1;
 }
 
 .image p{
@@ -68,14 +74,15 @@ h1{
     text-align: center;
     text-decoration: none;
     text-transform: uppercase;
+    letter-spacing: 0.2rem;
     padding: 1rem 0;
     background-color: rgba(0, 0, 0, 0.7);
     /* animacao */
     transform: translateY(0);
-    transition: 0.2s;
+    transition: 0.2s; 
 }
 
 .image:has(img:hover) p{
     /* animacao */
-    transform: translateY(-3.2rem);
+    transform: translateY(-3.2rem); 
 }
