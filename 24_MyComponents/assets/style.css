@@ -1,0 +1,38 @@
+:root{
+    --primary-color: #FF7833;
+    --secondary-color: #31333B;
+    --default-color: #e7e7e7;
+    --bg-color: #444856;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    display: flex;
+    margin: 0;
+    color: var(--default-color);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    min-height: 100vh;
+    background-color: violet;
+}
+
+.main-header{
+    /* flex-grow: 0;
+    flex-shrink: 0;
+    flex-basis: 26rem; */
+    flex: 0 0 26rem;
+    background-color: var(--secondary-color);
+}
+
+.main{
+    background-color: var(--bg-color);
+    /* flex-grow: 1;
+    flex-shrink: 0;*/
+    flex: 1 0;
+}
+
+
+
+
