@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>My Components - Tipografia</title>
+    <link rel="stylesheet" href="assets/normalize.css">
+    <link rel="stylesheet" href="assets/style.css">
+    <link rel="stylesheet" href="tipografia.css">
+</head>
+
+<body>
+    <header class="main-header">
+        <nav class="main-nav">
+            <a href="#">
+                <img class="perfil-img" src="imagens/perfil.png" alt="Foto do Perfil">
+            </a>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="tipografia.html">Tipografia</a></li>
+                <li><a href="cards.html">Cards</a></li>
+                <li><a href="listas.html">Listas</a></li>
+                <li><a href="formulario.html">Formulário</a></li>
+                <li><a href="botoes.html">Botões</a></li>
+                <li><a href="tabelas.html">Tabelas</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="main">
+        <h1>My Components</h1>
+
+        <article class="highlight">
+            <h2>Tipografia</h2>
+            <p>A Tipografia transmite nossas definições de tamanhos e espaçamento e deve ser utilizada respeitando a
+                hierarquia dos elementos na interface</p>
+        </article>
+
+        <section>
+            <h3>Elementos</h3>
+
+            <article>
+                <h4>Textos</h4>
+
+                <p>Esse texto está escrito em <b>negrito</b> e esse texto é um <strong>texto forte.</strong></p>
+
+                <p>Esse texto está em <i>itálico</i> e esse texto está com <em>ênfase.</em></p>
+
+                <p>
+                    *** Não utilizar a tag <b>u</b> &lt;u&gt;Sublinhado&lt;/u&gt; pois apesar de funcionar visualmente, semanticamente tem outro significado. 
+                    <br>Ex: underline em palavras escritas erradas num corretor de texto. <u class="wrong">PalavraErrada</u>
+                    <br>O correto é utilizar CSS:
+                    <br>Isso é um texto <span class="underline">sublinhado</span> e isso é um <a href="#">link.</a>
+                </p>
+            </article>
+
+            <article>
+                <h4>Sobrescrito e subscrito</h4>
+
+                <p>3 <sup>2</sup> é igual a 9</p>
+
+                <p>A fórmula da água é H<sub>2</sub>O</p>
+            </article>
+
+            <article>
+                <h4>Abreviações</h4>
+
+                <p>Abreviação simples</p>
+
+                Para criar páginas na web, precisamos aprender sobre 
+                <abbr title="HiperText Markup Language">HTML</abbr>
+
+                <p>
+                    Abreviação com definição. (usado somente em casos específicos. 
+                   <br>ex: Criar um sistema com a Wikipedia, Dicionários, etc)
+                </p>
+
+                <p>
+                    <a href="#html-dfn"><abbr title="HiperText Markup Language">HTML</abbr></a>
+                </p>
+                <p>
+                    Para criar páginas na web, precisamos aprender sobre 
+                    <dfn id="html-dfn">
+                        <abbr title="HiperText Markup Language">HTML</abbr>
+                    </dfn>
+                    Que é a principal linguagem da web onde podemos incluir conteúdo de forma semântica.
+                </p>
+            </article>
+
+        </section>
+
+    </main>
+</body>
+
+</html>
