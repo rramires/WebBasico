@@ -37,6 +37,10 @@ h2{
 }
 
 article{
+    margin-bottom: 3rem;
+}
+
+section{
     /* padding-top: 1em;
     padding-bottom: 1em; */
     padding: 1em 0;

@@ -1,11 +1,3 @@
-:root{
-    --primary-color: #FF7833;
-    --secondary-color: #31333B;
-    --default-color: #e7e7e7;
-    --default-color-light: #9e9e9e;
-    --secondary-color-light: #444856;
-}
-
 .card{
     /* *** Cagada foi colocado um padding direto no article no CSS principal */
     padding: 0;
@@ -26,4 +18,14 @@
     font-size: 1.75em;
 }
 
-/*  */
+.card img{
+    max-width: 100%;
+}
+
+/* 2 Cards */
+
+.row{
+    display: flex;
+    gap: 2rem;
+    padding: 1.5rem 0;
+}
