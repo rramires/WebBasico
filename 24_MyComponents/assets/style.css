@@ -37,8 +37,16 @@ h2{
 }
 
 article{
-    padding-top: 1px;
-    padding-bottom: 1px;
+    /* padding-top: 1em;
+    padding-bottom: 1em; */
+    padding: 1em 0;
+}
+
+.highlight{
+    border-left: 1px solid var(--primary-color);
+    font-size: 1.1em;
+    padding-left: 2em;
+    margin-bottom: 2.2em;
 }
 
 .main-header{
@@ -88,7 +96,8 @@ a{
     transition: padding-right .2s, background-color 0.4s;
 }
 
-.main-nav ul a:hover{
+.main-nav ul a:hover,
+.main-nav ul a:focus{
     background-color: var(--secondary-color-light);
     padding-right: 1rem;
 }
@@ -97,11 +106,3 @@ a{
     border-bottom: 1px solid #7b7b7b;
     padding: 0.4rem 0;
 }
-
-.hightlight{
-
-}
-
-
-
-
