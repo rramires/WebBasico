@@ -1,0 +1,35 @@
+.row{
+    display: flex;
+    gap: 2rem;
+    padding: 1.5rem 0;
+    justify-content: space-between;
+}
+
+/* Sempre o mesmo tamanho independente do conteúdo */
+.row > *{
+    /* flex-grow: 1;
+    flex-shrink: 0;
+    flex-basis: 0%; */
+    flex: 1 0 0%;
+}
+
+.alternate{
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.alternate li:not(:last-child){
+    padding: 0;
+}
+
+.alternate li:not(:last-child){
+    border-bottom: 2px solid;
+}
+
+.roman{
+    list-style-type: upper-roman;
+}
+
+.list-emoji{
+    list-style-type: "\2620";
+}

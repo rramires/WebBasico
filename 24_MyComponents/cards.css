@@ -22,8 +22,6 @@
     max-width: 100%;
 }
 
-/* 2 Cards */
-
 .row{
     display: flex;
     gap: 2rem;
