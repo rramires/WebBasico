@@ -77,6 +77,53 @@
 
         </section>
 
+
+        <section>
+            <h2>Quiz</h2>
+
+            <div class="row">             
+                <form action="#">
+                    <label for="tecnologia">Qual é a sua linguagem preferida?</label>
+                    <select name="tecnologia" id="tecnologia">
+                        <option value="null">Selecione:</option>
+                        <option value="html">HTML</option>
+                        <option value="css">CSS</option>
+                        <option value="js">Javascript</option>
+                    </select>
+
+                    <label>Baixa Prioridade
+                        <input type="radio" name="Prioridade" value="baixa">
+                    </label>
+                    <label>Média Prioridade
+                        <input type="radio" name="Prioridade" value="media">
+                    </label>
+                    <label>Alta Prioridade
+                        <input type="radio" name="Prioridade" value="alta">
+                    </label>
+
+                    <label>
+                        <input type="checkbox" name="copia" value="true">
+                        Envie-me uma cópia
+                    </label>
+                    <label>
+                        <input type="checkbox" name="humano" value="true">
+                        Sou um humano
+                    </label>
+
+                    <div class="row">
+                        <input type="reset" 
+                        value="Limpar"
+                        class="btn">
+                        <input type="submit" 
+                            value="Enviar"
+                            class="btn">
+                    </div>
+                </form>
+                <div></div>
+            </div>
+        </section>
+
+
     </main>
 </body>
 
