@@ -1,9 +1,11 @@
 :root{
     --primary-color: #FF7833;
     --secondary-color: #31333B;
+    --secondary-color-transp: #31333Bbb;
     --default-color: #e7e7e7;
     --default-color-light: #9e9e9e;
     --secondary-color-light: #444856;
+    --secondary-color-light-transp: #4448563c;
     --secondary-color-dark: #23252d;
 }
 
@@ -17,8 +19,12 @@ body{
     color: var(--default-color);
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     min-height: 100vh;
-    background-color: violet;
     line-height: 1.7;
+    /* Background */
+    background-image: url(../imagens/bg-unsplash.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
 }
 
 h1{
@@ -59,11 +65,11 @@ section{
     flex-shrink: 0;
     flex-basis: 26rem; */
     flex: 0 0 26rem;
-    background-color: var(--secondary-color);
+    background-color: var(--secondary-color-transp);
 }
 
 .main{
-    background-color: var(--secondary-color-light);
+    background-color: var(--secondary-color-light-transp);
     /* flex-grow: 1;
     flex-shrink: 0;*/
     flex: 1 0;
@@ -103,7 +109,7 @@ a{
 
 .main-nav ul a:hover,
 .main-nav ul a:focus{
-    background-color: var(--secondary-color-light);
+    background-color: var(--secondary-color-light-transp);
     padding-right: 1rem;
 }
 
