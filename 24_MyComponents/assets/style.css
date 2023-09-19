@@ -92,6 +92,10 @@ a{
 .main-nav{
     text-align: right;
     padding: 6.5rem 2.4rem 2.4rem;
+    /* Menu fixo */
+    position: sticky;
+    top: 0;
+    left: 0;
 }
 
 .main-nav ul{
