@@ -121,3 +121,16 @@ a{
     border-bottom: 1px solid #7b7b7b;
     padding: 0.4rem 0;
 }
+
+.social a{
+    display: inline-block;
+    text-decoration: none;
+}
+
+.social img{
+    width: 2rem;
+    height: 2rem;
+    filter: invert(100);
+    vertical-align: middle;
+    margin-right: 0.3rem;
+}
