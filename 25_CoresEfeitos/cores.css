@@ -1,6 +1,8 @@
 body {
     font-family: sans-serif;
-    background-image: url(imagens/tile.png);
+    background-image: linear-gradient(/* to top left, */ /* 68deg, */ transparent 90%, black), url(imagens/tile.png);
+    background-attachment: fixed, scroll;
+    /* background-blend-mode: color; altere a cor no bg image pra perceber */ 
 }
 
 .cores{
@@ -24,4 +26,9 @@ section{
 
 .cores::before{
     content: "[ " counter(contador) " ]";
+    display: inline-block;
+    margin-bottom: 16px;
+    font-weight: bold;
 }
+
+
