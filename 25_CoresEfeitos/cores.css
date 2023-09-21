@@ -1,3 +1,7 @@
+:root{
+    --primary-color: #e10f0f;
+}
+
 body {
     font-family: sans-serif;
     background-image: linear-gradient(/* to top left, */ /* 68deg, */ transparent 90%, black), url(imagens/tile.png);
@@ -7,7 +11,7 @@ body {
 
 .cores{
     width: 80%;
-    border: 8px dashed black;
+    border: 8px dashed color-mix(in srgb, red, blue);
     margin: 20px auto;
     padding: 26px;
 }
