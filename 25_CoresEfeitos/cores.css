@@ -36,3 +36,8 @@ section{
 }
 
 
+.cores:nth-of-type(2){
+    background-color: blue;
+    /* background-clip: border-box; default */
+    background-clip: content-box;
+}
