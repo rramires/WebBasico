@@ -107,3 +107,12 @@ section{
     background-image: repeating-conic-gradient(white 3deg, black 12deg);
  
 }
+
+.cores:nth-of-type(16){
+    box-shadow: 10px 10px 6px rgba(0, 0, 0, 0.5); 
+}
+
+.cores:nth-of-type(17){
+    filter: drop-shadow(10px 10px 6px rgba(0, 0, 0, 0.5)); 
+}
+
