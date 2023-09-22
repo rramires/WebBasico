@@ -62,3 +62,48 @@ section{
 .cores:nth-of-type(6){
     background-image: radial-gradient(circle, blue 30%, red, green);
 }
+
+.cores:nth-of-type(7){
+    background-image: radial-gradient(circle at left top, blue, red);
+}
+
+.cores:nth-of-type(8){
+    background-image: radial-gradient(ellipse at 10px 30%, blue, red, yellow);
+}
+
+.cores:nth-of-type(9){
+    background-image: radial-gradient(closest-corner at 100px 30%, blue, red, yellow);
+}
+
+.cores:nth-of-type(10){
+    background-image: radial-gradient(farthest-side at 50% 50px, blue, red, yellow);
+}
+
+.cores:nth-of-type(11){
+    background-image: conic-gradient(from 45deg, blue 30%, red, green, yellow);
+}
+
+.cores:nth-of-type(12){
+    background-image: conic-gradient(from 45deg, blue 30%, red, green, yellow);
+    filter: blur(10px);
+}
+
+.cores:nth-of-type(13){
+    background-image: conic-gradient(from 45deg, blue 30%, red, green, yellow);
+    transition: filter 3s linear;
+}
+.cores:nth-of-type(13):hover{
+    background-image: conic-gradient(from 45deg, blue 30%, red, green, yellow);
+    filter: hue-rotate(3turn);
+    aspect-ratio: 16 / 9;
+}
+
+.cores:nth-of-type(14){
+    background-image: repeating-linear-gradient(to top right, white 1px, black 10px);
+ 
+}
+
+.cores:nth-of-type(15){
+    background-image: repeating-conic-gradient(white 3deg, black 12deg);
+ 
+}
