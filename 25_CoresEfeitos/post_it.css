@@ -1,0 +1,82 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: brown;
+}
+
+h1{
+    font-size: 48px;
+    font-weight: lighter;
+    text-align: center;
+}
+
+.card_title{
+    font-weight: lighter;
+}
+
+.cards-container{
+    display: flex;
+    gap: 25px;
+    flex-wrap: wrap;
+    width: 80%;
+    margin: 0 auto;
+    /* outline: 2px solid black; */
+}
+
+/* 
+Versão 1
+.card{
+    width: 400px;
+    background-image: linear-gradient(135deg, transparent 25px, white 25px);
+    filter: drop-shadow(0 0 5px black);
+    padding: 40px 30px 30px 50px;
+    box-sizing: border-box;
+} */
+
+/* 
+Versão 2 - não é possivel colocar a sombra no "cantinho"
+.card{
+    width: 400px;
+    background-image: linear-gradient(135deg, transparent 25px, grey 25px),
+                      linear-gradient(135deg, transparent 25px, white 25px);
+    background-size: 35px 35px, 100%;
+    background-repeat: no-repeat;
+    filter: drop-shadow(0 0 5px black);
+    padding: 40px 30px 30px 50px;
+    box-sizing: border-box;
+} */
+
+.card{
+    /* flex-basis: calc(33% - 25px); */
+    /* 3 sizes clamp(min, ideal, max) */
+    flex-basis: clamp(300px, calc(33% - 25px), 400px);
+    flex-grow: 1; 
+    background-image: linear-gradient(135deg, transparent 25px, white 25px);
+    filter: drop-shadow(0 0 5px black);
+    padding: 40px 30px 30px 50px;
+    box-sizing: border-box;
+    position: relative;
+}
+
+
+.card::before{
+    content: "";
+    display: block;
+    width: 35px;
+    height: 35px;
+    position: absolute; 
+    top: 0;
+    left: 0; 
+    filter: drop-shadow(2px 2px 3px rgba(0, 0, 0, 0.5));
+    background-image: linear-gradient(135deg, transparent 25px, grey 25px);
+}
+
+
+
+
+
+
