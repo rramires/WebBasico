@@ -1,0 +1,37 @@
+.label span{
+    /* Esconde todos os spam */
+	display: none;
+}
+/* media queries */
+@media screen and (min-width:960px){
+	body{
+		background: green;
+	}
+    /* Mostra o spam 1 */
+	#res1{
+		display: initial;
+	}
+}
+
+/* Essa condição não é necessária, poderiam ser valores 
+   default de backgroud e visibilidade do span 
+   foi feita pra ficar mais fácil de entender*/
+@media screen and (min-width:481px) and (max-width:959px){
+	body{
+		background: violet;
+	}
+    /* Mostra o spam 2 */
+	#res2{
+		display: initial;
+	}
+}
+
+@media screen and (max-width:480px){
+	body{
+		background: blue;
+	}
+    /* Mostra o spam 3 */
+	#res3{
+		display: initial;
+	}
+}
