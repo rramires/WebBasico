@@ -69,12 +69,23 @@ body{
 
 /* Medindo o container em vez da viewport */
 
+/* "Ligar" o container como referencia */
 .card_wrapper, main{
     container-type: inline-size;
 }
 
+/* dar um nome para facilitar a identificação:
+ @container nomeQueVcDeu
+*/
+.card_wrapper{
+    container-name: cardWrapper;
+}
+main{
+    container-name: cardMain;
+}
 
-@container (min-width: 50em) {
+
+@container cardWrapper (min-width: 50em) {
     .card{
         flex-direction: row;
     }
@@ -84,7 +95,7 @@ body{
     }
 }
 
-@container (min-width: 60em) {
+@container cardMain (min-width: 60em) {
     .cards-container{
         flex-direction: row;
     }
