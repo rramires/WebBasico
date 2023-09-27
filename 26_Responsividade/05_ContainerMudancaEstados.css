@@ -85,6 +85,12 @@ main{
 }
 
 
+/* é possível fazer o nome e o type junto */
+/* .card_wrapper{
+    container cardWrapper / inline-size;
+} */
+
+
 @container cardWrapper (min-width: 50em) {
     .card{
         flex-direction: row;
