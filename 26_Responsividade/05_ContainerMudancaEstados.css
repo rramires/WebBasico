@@ -4,11 +4,14 @@ body{
 
 .card{
     border: 2px solid #999;
+    display: flex;
+    flex-direction: column;
 }
 
 .card_header img{
     display: block;
     width: 100%;
+    height: 100%;
     max-height: 10em;
     /* Muda a proporcão, similar as propriedades 
        usadas no background-size  */
@@ -20,6 +23,7 @@ body{
     padding: 1em;
     box-sizing: border-box;
     background-color: #ccc;
+    flex-grow: 1;
 }
 
 .card_body p{
@@ -33,4 +37,31 @@ body{
     padding: .75em 1em;
     color: white;
     display: inline-block;
+}
+
+/* Acima foi feito primeiro a formatação para celular */
+
+/* Agora vamos uar o @media e formatar para outro formato maior (desktop) */
+
+
+.cards-container{
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+@media screen and (min-width: 50em) {
+    .card{
+        flex-direction: row;
+    }
+
+    .card_header img{
+        max-height: initial;
+    }
+}
+
+@media screen and (min-width: 70em) {
+    .cards-container{
+        flex-direction: row;
+    }
 }
