@@ -1,0 +1,82 @@
+html{
+    font-size: 32px;
+}
+
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 16px;
+}
+
+h1, h2{
+    font-weight: lighter;
+}
+
+div{
+    outline: 2px solid red;
+    min-height: 80px;
+}
+
+div:nth-of-type(1){
+    background-color: yellow;
+    font-size: 32px;
+    padding: 16px;
+}
+
+div:nth-of-type(1) b{
+    font-size: 24px;
+}
+
+
+/* Importante usar unidades de medida relativas para acessibiidade, 
+pois usando pixels caso o usuário altere o tamanho da fonte, não escala! */
+
+div:nth-of-type(2){
+    background-color: aquamarine;
+    font-size: 2em;
+    padding: 1em;
+}
+
+div:nth-of-type(2) b{
+    font-size: 0.75em;
+}
+
+
+/* REM leva em consideração a fonte definida na "raiz" 
+   no caso os 32px vindos da definição no html,
+   já na div anterior (div:nth-of-type(2) pega relativo 
+   ao elemento acima, no caso os 16 px definidos no body */
+
+div:nth-of-type(3){
+    background-color: aquamarine;
+    font-size: 2rem;
+    padding: 1em;
+}
+
+div:nth-of-type(3) b{
+    font-size: 0.75rem;
+}
+
+/* Conclusão: 
+Melhor comportamento, usar:
+REM para font-size
+EM para padding, margim, gap etc 
+Pixel, evitar ao máximo! 
+*/
+
+
+/* 
+Pixel no @media se comporta como nos exemplos anteriores
+Mas ferra com a mudança de fonte para acessibilidade
+ */
+/* @media screen and (min-width: 860px){
+    body{
+        background-color: #ddd;
+    }
+} */
+
+/* Melhor fazer o cálculo (860px / 16px) e usar EM */
+@media screen and (min-width: 53.75em){
+    body{
+        background-color: #ddd;
+    }
+}
