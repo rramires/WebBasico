@@ -5,9 +5,13 @@
 html{
     font-family: sans-serif;
 }
+h1, h2, h3, h4{
+    font-family: 'Oxygen', sans-serif;
+}
 
 .maxWidth{
     max-width: 70.25em;
+    margin: auto;
 }
 
 .top_header{
@@ -21,6 +25,7 @@ html{
 .top_header_nav ul{
     list-style-type: none;
     padding: 0;
+    margin-bottom: 0;
 }
 
 .top_header_nav a{
@@ -59,4 +64,40 @@ html{
     .top_header_nav a:hover{
         background-color: color-mix(in srgb, var(--primary-color), white 90%);
     }
+}
+
+.heroBanner{
+    text-align: center;
+    background-color: #f6f6f6;
+    padding: 1em;
+}
+
+.heroBanner_iconPlay{
+    width: 5em;
+    height: 5em;
+    display: none;
+}
+
+.heroBanner_iconPlay img{
+    width: 100%;
+}
+
+.heroBanner_title{
+    margin-top: 0;
+    color: var(--primary-color);
+    font-size: 1.5em;
+}
+
+.heroBanner_subtitle{
+    font-size: 1em;
+    color: color-mix(in srgb, var(--primary-color), white 50%);;
+}
+
+.heroBanner_btn{
+    background-color: #58c4c4;
+    color: white;
+    text-decoration: none;
+    display: inline-block;
+    padding: 1em 3em;
+    border-radius: 5px;
 }
