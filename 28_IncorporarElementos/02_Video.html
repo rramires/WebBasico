@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vídeo</title>
+
+    <style>
+        ::cue{
+            font-size: 22px;
+            color: yellow;
+            background-color: blue;
+        }
+    </style>
+</head>
+<body>
+    <!-- <video src="media/video.mp4" controls></video> -->
+    <!-- <video controls muted loop> -->
+    <video controls muted controlsList="nodownload">
+        <source src="media/video.mp4" type="video/mp4">  
+        <source src="media/video.ogv" type="video/ogg">
+        <source src="media/video.webm" type="video/webm">
+        <track src="media/track.en.vtt" kind="captions" srclang="en" label="English" default>
+        <track src="media/track.pt.vtt" kind="captions" srclang="pt" label="Português">
+        <p>O seu Browser não supota vídeo...</p>
+    </video>
+</body>
+</html>
