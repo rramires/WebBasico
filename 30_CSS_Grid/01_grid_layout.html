@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Grid</title>
+
+    <style>
+
+        *{
+            margin: 0;
+            padding: 0;
+            border: 0;
+            list-style: none;
+        }
+
+        .gridContainer {
+            background: #ccc;
+        }
+
+
+        /* Relacionado ao Grid */
+
+        .gridContainer{
+            width: 100%;
+            height: 100vh;
+            display: grid;
+            grid-template-columns: 200px calc(100% - 200px);
+            grid-template-rows: 120px calc(100% - 120px - 88px) 88px;
+        }
+
+
+        .gridItemLogo{
+            background-color: aqua;
+        }
+
+        .gridItemBanner{
+            background-color: yellow;
+        }
+
+
+
+        .gridItemMenu{
+            background-color: blue;
+        }
+
+        .gridItemContent{
+            background-color: bisque;
+        }
+
+
+
+        .gridItemFooter1{
+            background-color: aquamarine;
+        }
+
+        .gridItemFooter2{
+            background-color: aqua;
+        }
+        
+
+    </style>
+</head>
+
+<body>
+    <div class="gridContainer">
+        <div class="gridItemLogo">Logo</div>
+        <div class="gridItemBanner">Banner</div>
+        <div class="gridItemMenu">Menu</div>
+        <div class="gridItemContent">Content</div>
+        <div class="gridItemFooter1">Footer1</div>
+        <div class="gridItemFooter2">Footer2</div>
+    </div>
+</body>
+
+</html>
