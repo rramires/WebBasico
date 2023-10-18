@@ -37,6 +37,21 @@
             grid-template-rows: 50px 100px;
         }
 
+        .gridItem2{
+            background-color: aquamarine;
+            /* É possivel especificar em qual linha e coluna inicia e termina */
+            grid-column: 2 / 4;
+            grid-row: 2 / -1;
+        }
+
+        .gridItem:nth-child(6) {
+            /* começou na coluna 2 e expandiu 2 */
+            grid-column: 2 / span 2;
+            /* da coluna onde está(1), expandiu 2 */
+            grid-column: span 2;
+        }
+
+
     </style>
 </head>
 
@@ -46,7 +61,7 @@
 
     <div class="gridContainer">
         <div class="gridItem">1</div>
-        <div class="gridItem">2</div>
+        <div class="gridItem2">G2</div>
         <div class="gridItem">3</div>
         <div class="gridItem">4</div>
         <div class="gridItem">5</div>
