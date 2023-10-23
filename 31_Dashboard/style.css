@@ -1,3 +1,9 @@
+:root{
+    --primary-color: #004EDA;
+    --grey: #f3f2f8;
+}
+
+
 /* Reset */
 *{
     margin: 0;
@@ -9,5 +15,32 @@
 
 body{
     font-family: 'Poppins', sans-serif;
+    /* Grid */
+    display: grid;
+    grid-template-columns: 240px 1fr;
+    grid-template-rows: 64px auto;
 }
 
+img{
+    max-width: 100%;
+}
+
+
+.mainNav{
+    grid-row: 1 / -1;
+    grid-column: 1 / 2;
+    background-color: aquamarine;
+}
+
+
+.topNav{
+    grid-row: 1 / 2;
+    grid-column: 1 / -1;
+    background-color: yellow;
+}
+
+main{
+    grid-row: 2 / -1;
+    grid-column: 2 / -1;
+    background-color: bisque;
+}
