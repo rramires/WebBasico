@@ -21,8 +21,9 @@ body{
     font-family: 'Poppins', sans-serif;
     /* Grid */
     display: grid;
-    grid-template-columns: 240px 1fr;
-    grid-template-rows: 64px auto;
+    grid-template-columns: max-content 1fr;
+    /* grid-template-rows: 64px auto; */
+    grid-template-rows: 64px minmax( calc(100vh - 64px), auto);
 }
 
 img{
@@ -37,6 +38,7 @@ img{
     display: flex;
     flex-direction: column;
     max-height: 100vh;
+    padding-right: var(--default-padding);
     /* fixa no lugar */
     position: sticky;
     top: 0;
