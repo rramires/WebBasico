@@ -154,7 +154,7 @@ img {
 .row{
     display: grid;
     grid-template-columns: repeat(12, 1fr);
-    gap: 3rem;
+    gap: 0.5rem;
     /* Dense = occupying all spaces */
     grid-auto-flow: dense;
 }
@@ -166,6 +166,10 @@ img {
 
 
 @media screen and (min-width: 46.25em) {
+
+    .row{
+        gap: 1rem;
+    }
 
     .row > .md-3{
         grid-column: span 3;
@@ -193,9 +197,17 @@ img {
 }
 
 @media screen and (min-width: 90em) {
+
+    .row{
+        gap: 3rem;
+    }
     
     .row > .lg-3{
         grid-column: span 3;
+    }
+
+    .row > .lg-4{
+        grid-column: span 4;
     }
 
     .row > .lg-5{
