@@ -19,6 +19,11 @@ body {
     margin: auto;
 }
 
+
+.imagem{
+    text-align: center;
+}
+
 .hero_title{
     margin-top: 0;
 }
@@ -27,7 +32,7 @@ body {
     list-style-type: none;
     padding: 0;
     text-align: right;
-    /* TODO: Temporário */
+    /* Hide menu */
     display: none;
 }
 
@@ -123,7 +128,6 @@ img {
 
 .footer {
     background-color: var(--gray);
-    padding: 3rem 0;
 }
 
 .footer ul {
@@ -183,6 +187,47 @@ img {
 
 
 @media screen and (min-width: 46.25em) {
+
+    body{
+        text-align: left;
+    }
+
+    .header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .header-menu {
+        /* Show menu */
+        display: block;
+        margin: 0;
+    }
+
+    .header-menu li{
+        display: inline-block;
+        margin-left: 1.5rem;
+    }
+
+    .header-menu a{
+        padding: 1rem;
+    }
+
+    .testemunho {
+        display: flex;
+        /* align-items: center; */
+        gap: 1rem;
+    }
+
+    .testemunho_thumb{
+        width: 8.125rem;
+        height: 8.125rem;
+    }
+
+    .contato_image {
+        display: block;
+        text-align: center;
+    }
 
     .row{
         gap: 1rem;
