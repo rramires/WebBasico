@@ -14,9 +14,13 @@ body {
 }
 
 .content-wrapper-center {
-    padding: 1rem;
+    padding: 3rem 1rem 2rem;
     max-width: 67.25rem;
     margin: auto;
+}
+
+.hero_title{
+    margin-top: 0;
 }
 
 .header-menu {
@@ -159,9 +163,22 @@ img {
     grid-auto-flow: dense;
 }
 
+.row.testemunhos_wrapper{
+    row-gap: 3rem;
+}
+
+.row.contato{
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+}
+
 
 .row > .sm-12{
     grid-column: 1 / -1;
+}
+
+.contato-tittle{
+    margin-top: 0;
 }
 
 
