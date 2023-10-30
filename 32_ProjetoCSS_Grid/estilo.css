@@ -116,6 +116,8 @@ img {
     background-color: var(--gray);
     border-radius: 5px;
     padding: 1rem;
+
+    container: testemunhoCard / inline-size;
 }
 
 .contato {
@@ -188,6 +190,23 @@ img {
     margin-top: 0;
 }
 
+.testemunho_card {
+    display: flex;
+    /* align-items: center; */
+    gap: 1rem;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+@container testemunhoCard (min-width: 675px){
+    .testemunho_card{
+        flex-direction: row;
+        text-align: left;
+    }
+}
+
+
 
 @media screen and (min-width: 46.25em) {
 
@@ -222,12 +241,6 @@ img {
 
     .header-menu a{
         padding: 1rem;
-    }
-
-    .testemunho {
-        display: flex;
-        /* align-items: center; */
-        gap: 1rem;
     }
 
     .testemunho_thumb{
@@ -269,17 +282,15 @@ img {
     }
 }
 
+
+
 @media screen and (min-width: 90em) {
 
     .hero_title{
         margin-bottom: 6.25rem;
     }
 
-    .testemunho{
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-    }
+   
 
     .row{
         gap: 3rem;
