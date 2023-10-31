@@ -360,7 +360,7 @@ img {
     top: 100px;
     max-height: 0px;
     overflow: hidden;
-    background-color: red;
+    background-color: #eee;
     /* animate */
     transition: max-height 0.3s;
 
@@ -374,6 +374,11 @@ img {
 .header-menu:focus-within{
     max-height: 100vh;
 }
+
+.menu-btn:checked+.menu-icon .nav-icon{
+    background-color: transparent;
+}
+
 
 @media screen and (min-width: 46.25em) {
     .header-menu {
@@ -393,6 +398,8 @@ img {
 .menu-icon{
     position: relative;
     cursor: pointer;
+    height: 30px;
+    padding: 0 2px;
     /* user-select: none; */
 }
 
@@ -412,14 +419,25 @@ img {
     height: 2px;
     width: 24px;
     position: absolute;
+    /* animate */
+    transition: transform 0.3s;
 }
 
 .nav-icon::after{
     transform: translateY(8px);
-    background-color: blue;
 }
 
 .nav-icon::before{
     transform: translateY(-8px);
-    background-color: red;
+}
+
+.menu-btn:checked + .menu-icon .nav-icon::after{
+    transform: rotate(-45deg);
+}
+.menu-btn:checked + .menu-icon .nav-icon::before{
+    transform: rotate(45deg);
+}
+
+.menu-btn:focus + .menu-icon{
+    outline: 2px solid black;
 }
