@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animação</title>
+    <style>
+        @keyframes anda {
+            from{
+                transform: translateX(0);
+                background-color: yellow;
+            }
+            50%{
+                background-color: blue;
+            }
+            to{
+                transform: translateX(300px);
+                background-color: red;
+            }
+        }
+
+        .anima{
+            outline: 3px solid red;
+            width: 400px;
+        }
+
+        .anima div{
+            width: 100px;
+            height: 50px;
+            background-color: #ccc;
+            margin-bottom: 10px;
+           
+        }
+
+        .anima div:nth-child(1){
+            /* props de anumacao */
+            animation-name: anda;
+            animation-duration: 1s;
+            animation-iteration-count: infinite;
+            animation-timing-function: ease-out;
+            animation-direction: alternate-reverse;
+            animation-fill-mode: both;
+            
+        }
+
+        .anima div:nth-child(2){
+            /* resumido */
+            animation: anda 1s infinite ease-out alternate-reverse both;
+            animation-play-state: paused;
+        }
+
+        .anima div:nth-child(2):hover{
+            animation-play-state: running;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="anima">
+        <div>1</div>
+        <div>2</div>
+    </div>
+</body>
+</html>
