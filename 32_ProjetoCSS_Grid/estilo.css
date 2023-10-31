@@ -438,6 +438,7 @@ img {
     transform: rotate(45deg);
 }
 
-.menu-btn:focus + .menu-icon{
+/* focus-visible = foco apenas via teclado */
+.menu-btn:focus-visible + .menu-icon{
     outline: 2px solid black;
 }
