@@ -31,15 +31,12 @@
             }
         }
 
-        @keyframes escala {
-            from{
-                transform: scaleX(0);
+        @keyframes largura {
+            0%, 100%{
+                width: 20px;
             }
-            50%{
-                transform: scaleX(200%);
-            }
-            to{
-                transform: rotate(0);
+            20%, 80%{
+                width: 120px;
             }
         }
 
@@ -84,6 +81,14 @@
                        gira 1s infinite;
         }
 
+        .anima div:nth-child(4){
+            /* will-change aumenta performance */
+            will-change: width;
+            animation: largura 2s infinite;
+        }
+
+        
+
     </style>
 </head>
 <body>
@@ -91,6 +96,7 @@
         <div>1</div>
         <div>2</div>
         <div>3</div>
+        <div>4</div>
     </div>
 </body>
 </html>
