@@ -19,6 +19,30 @@
             }
         }
 
+        @keyframes gira {
+            from{
+                transform: rotate(0);
+            }
+            50%{
+                transform: rotate(360deg);
+            }
+            to{
+                transform: rotate(0);
+            }
+        }
+
+        @keyframes escala {
+            from{
+                transform: scaleX(0);
+            }
+            50%{
+                transform: scaleX(200%);
+            }
+            to{
+                transform: rotate(0);
+            }
+        }
+
         .anima{
             outline: 3px solid red;
             width: 400px;
@@ -53,12 +77,20 @@
             animation-play-state: running;
         }
 
+        .anima div:nth-child(3){
+            /* resumido */
+            animation: anda 1s infinite, 
+                       escala 0.5s infinite,
+                       gira 1s infinite;
+        }
+
     </style>
 </head>
 <body>
     <div class="anima">
         <div>1</div>
         <div>2</div>
+        <div>3</div>
     </div>
 </body>
 </html>
