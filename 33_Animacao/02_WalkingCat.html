@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Walking Cat</title>
+    <style>
+
+        @keyframes anda{
+            from{
+                background-position: 0 0;
+            }
+
+            to{
+                background-position: 0 -2400px;
+            }
+        }
+
+        @keyframes senta{
+            from{
+                background-position: -400px 0;
+            }
+
+            to{
+                background-position: -400px -1200px;
+            }
+        }
+
+        .cat1{
+            width: 400px;
+            height: 200px;
+            background-image: url(walking_sprite.png);
+            background-repeat: no-repeat;
+            background-position: 0 0;
+            /* Invertendo o gato */
+            transform: scaleX(-1);
+            /* Animacao */
+            animation: anda 0.8s steps(12, jump-end) infinite;
+        }
+
+        .cat2{
+            width: 400px;
+            height: 200px;
+            background-image: url(walking_sprite.png);
+            background-repeat: no-repeat;
+            background-position: -400px 0;
+            /* Invertendo o gato */
+            transform: scaleX(-1);
+            /* Animacao */
+            animation: senta 2s steps(6, jump-end) infinite; 
+        }
+
+    </style>
+</head>
+<body>
+    <div class="cat1"></div>
+    <div class="cat2"></div>
+</body>
+</html>
