@@ -1,1 +1,79 @@
-body {}
+body {
+    font-family: "Montserrat", sans-serif;
+    min-height: 100vh;
+    margin: 0;
+    overflow-y: hidden;
+
+    background-image: radial-gradient(ellipse at 0 0, #fff8c3, #ffb61d);
+}
+
+#wrapper{
+    /* Centraliza */
+    width: 90%;
+    max-width: 1340px;
+    margin: auto;
+}
+
+#wrapper header{
+    padding:  50px 0;
+}
+
+#wrapper h1{
+    font-size: 66px;
+}
+
+#wrapper h1 strong{
+    text-transform: uppercase;
+    color: brown;
+}
+
+#wrapper main{
+    display: flex;
+    gap: 2rem;
+}
+
+
+#wrapper>*{
+    /* flex-grow: 1;
+    flex-shrink: 0;
+    flex-basis: 0; */
+    flex: 1 0 0;
+}
+
+#wrapper .upper{
+    text-transform: uppercase;
+}
+
+#wrapper p{
+    font-weight: 300;
+}
+
+#wrapper form{
+    display: flex;
+    gap: 1rem;
+}
+
+#wrapper form input{
+    padding: 1rem;
+    border-radius: 6px;
+    font-family: inherit;
+    border: 1px solid #28293e;
+    outline: none;
+} 
+
+#wrapper form input[type="submit"]{
+    background-color: #031d44;
+    color: white;
+}
+
+#wrapper form input[type="text"]{
+    background-color: transparent;
+}
+
+#wrapper section{
+    
+}
+
+#wrapper .animation{
+    
+}
