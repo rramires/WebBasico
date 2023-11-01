@@ -33,7 +33,7 @@ body {
 }
 
 
-#wrapper>*{
+main>*{
     /* flex-grow: 1;
     flex-shrink: 0;
     flex-basis: 0; */
@@ -75,5 +75,57 @@ body {
 }
 
 #wrapper .animation{
+    max-width: 650px;
+    position: relative; 
+}
+
+#wrapper .animation img{
+    position: absolute;
+}
+
+@keyframes topleft {
+    from{
+        transform: translate(0, 0);
+    }
     
+    to{
+        transform: translate(-10px, -30px);
+    }
+}
+
+/* Posicoes */
+#wrapper .animation img:nth-child(1){
+    left: 10px;
+    top: 150px;
+    animation: topleft 2s infinite alternate;
+}
+
+#wrapper .animation img:nth-child(2){
+    right: 10px;
+    top: 20px;
+    animation: topleft 3s 0.5s infinite alternate;
+}
+
+#wrapper .animation img:nth-child(3){
+    right: 0;
+    top: 0;
+    animation: topleft 4s 0.5s infinite alternate;
+}
+
+#wrapper .animation img:nth-child(4){
+    left: 100px;
+    bottom: -100px;
+    animation: topleft 4s infinite alternate;
+}
+
+#wrapper .animation img:nth-child(5){
+    left: 100px;
+    top: -100px;
+    animation: topleft 3s infinite alternate;
+}
+
+#wrapper .animation img:nth-child(6){
+    right: 100px;
+    bottom: -100px;
+    animation: topleft 4s 0.8s infinite alternate;
 }
