@@ -85,9 +85,53 @@
             /* will-change aumenta performance */
             will-change: width;
             animation: largura 2s infinite;
+            /* Define o numero de frames */
+            animation-timing-function: steps(4);
+    
+            animation-timing-function: steps(4, jump-end);
         }
 
-        
+        .anima div:nth-child(4){
+            /* will-change aumenta performance */
+            will-change: width;
+            animation: largura 2s infinite;
+            /* Define o numero de frames */
+            animation-timing-function: steps(4);
+    
+            animation-timing-function: steps(4, jump-end);
+        }
+
+        .anima div:nth-child(5){
+            /* will-change aumenta performance */
+            will-change: width;
+            animation: largura 2s infinite;
+            /* Define o numero de frames */
+            animation-timing-function: steps(4, jump-start);
+        }
+
+        .anima div:nth-child(6){
+            /* will-change aumenta performance */
+            will-change: width;
+            animation: largura 2s infinite;
+            /* Define o numero de frames */
+            animation-timing-function: steps(4, jump-end);
+        }
+
+        .anima div:nth-child(7){
+            /* will-change aumenta performance */
+            will-change: width;
+            animation: largura 2s infinite;
+            /* Define o numero de frames */
+            animation-timing-function: steps(4, jump-none);
+        }
+
+        .anima div:nth-child(8){
+            /* will-change aumenta performance */
+            will-change: width;
+            animation: largura 2s infinite;
+            /* Define o numero de frames */
+            animation-timing-function: steps(4, jump-both);
+        }      
 
     </style>
 </head>
@@ -97,6 +141,10 @@
         <div>2</div>
         <div>3</div>
         <div>4</div>
+        <div>jump start</div>
+        <div>jump end</div>
+        <div>jump none</div>
+        <div>jump both</div>
     </div>
 </body>
 </html>
