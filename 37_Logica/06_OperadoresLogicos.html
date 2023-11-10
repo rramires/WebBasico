@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lógica de Programação</title>
+</head>
+<body>
+    <h1>Lógica de Programação</h1>
+
+    <script>
+        let nota1 = prompt("Qual a nota 1 do aluno?");
+        nota1 = parseInt(nota1);
+
+        let nota2 = prompt("Qual a nota 2 do aluno?");
+        nota2 = parseInt(nota2);
+
+        let media = (nota1 + nota2) / 2;
+
+        if(media > 5 && nota1 > 0 && nota2 > 0) {
+            alert("Média: " + media + " = Aprovado!");
+        }
+        else{
+            alert("Média: " + media + " = Reprovado!");
+        }
+        
+    </script>
+</body>
+</html>
