@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lógica de Programação</title>
+</head>
+<body>
+    <h1>Lógica de Programação</h1>
+
+    <script>
+        let palpite1 = prompt("Jogador 1 digite um número");
+        palpite1 = parseInt(palpite1);
+
+        let palpite2 = prompt("Jogador 2 digite um número");
+        palpite2 = parseInt(palpite2);
+
+
+        if(palpite1 === palpite2){
+            alert("Deu empate! " + palpite1 + " = " + palpite2);
+        }
+        else{
+            let palpiteComputador = parseInt( Math.random() * 2 );
+
+            alert( "O computador sorteou " + palpiteComputador + (palpiteComputador === 0 ? " Ganha o MENOR!" : " Ganha o MAIOR") );
+
+            if(palpiteComputador === 0){
+                if(palpite1 < palpite2){ // Ganha o MENOR número
+                    alert("Jogador 1 ganhou, pois tem o MENOR número: " + palpite1 + " < " + palpite2);
+                }
+                else{
+                    alert("Jogador 2 ganhou, pois tem o MENOR número: " + palpite1 + " < " + palpite2);
+                } 
+            }
+            else{
+                if(palpite1 > palpite2){ // Ganha o MAIOR número
+                    alert("Jogador 1 ganhou, pois tem o MAIOR número: " + palpite1 + " > " + palpite2);
+                }
+                else{
+                    alert("Jogador 2 ganhou, pois tem o MAIOR número: " + palpite1 + " > " + palpite2);
+                } 
+            }
+        }
+        
+    </script>
+</body>
+</html>
