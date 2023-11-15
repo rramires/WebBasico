@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lógica de Programação</title>
+</head>
+<body>
+    <h1>Lógica de Programação</h1>
+
+    <script>
+        let numero = prompt("Digite um número");
+        numero = parseFloat(numero);
+
+        // repetir até 10
+
+        // usando while
+
+        let index = 1;
+
+        while(index <= 10){
+
+            let resultado = numero * index;
+            
+            document.write( numero + " * " + index + " = " + resultado + "<br>");
+
+            index ++; // ou index = index +1
+        }
+
+        document.write("Terminou !!!<br>");
+        
+        // com for (inicio ; condições ; incremento) 
+        for(let i = 1 ; i < 10 ; i++){
+
+            let resultado = numero * i;
+            
+            document.write( numero + " * " + i + " = " + resultado + "<br>");
+        }
+
+    </script>
+</body>
+</html>
