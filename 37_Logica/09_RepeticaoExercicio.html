@@ -13,7 +13,7 @@
         numero = parseFloat(numero);
         
         // com for (inicio ; condições ; incremento) 
-        for(let i = 1 ; i <= 100 ; i++){
+        for(let i = 0 ; i <= 100 ; i++){
 
             let resultado = numero * i;
             
@@ -21,8 +21,8 @@
 
             //document.write((resultado % 10) + "<br>");
 
-            // % (módulo) retorna o resto da divisao exata
-            if((resultado % 10) === 0){
+            // % (módulo) retorna o resto da divisao exata 
+            if((resultado % 10) === 0 && resultado > 0){
                 document.write("<hr>");
             }
         }
