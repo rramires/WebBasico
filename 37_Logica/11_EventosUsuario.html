@@ -18,13 +18,24 @@
         let output = document.querySelector('#output');
 
         function criarTabuada(){
-            let mensagem = '';
-            for(let i = 0 ; i <= 1000 ; i++){
-                mensagem += "i: " + i + "<br>";
+            // perguntar o numero
+            let numero = prompt("Digite um número");
+
+            // converter o numero
+            numero = parseInt(numero);
+
+            // variavel para armazenar 
+            let mensagem = "";
+
+            // loop montar a tabuada
+            for(let i = 0 ; i <= 1000 ; i ++){
+                mensagem += numero + " * " + i + " = " + (numero * i) + "<br>";
             }
+
+            // adicionar no html
             output.innerHTML = mensagem;
         }
-
+     
         function limparTabuada(){
             output.innerHTML = "";
         }
