@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lógica de Programação</title>
+</head>
+<body>
+    <h1>Lógica de Programação</h1>
+
+    <button onclick="criarTabuada()">Criar Tabuada</button>
+    <button onclick="limparTabuada()">Limpar Tabuada</button>
+
+    <div id="output"></div>
+
+    <script>
+        
+        let output = document.querySelector('#output');
+
+        function criarTabuada(){
+            let mensagem = '';
+            for(let i = 0 ; i <= 1000 ; i++){
+                mensagem += "i: " + i + "<br>";
+            }
+            output.innerHTML = mensagem;
+        }
+
+        function limparTabuada(){
+            output.innerHTML = "";
+        }
+
+    </script>
+</body>
+</html>
