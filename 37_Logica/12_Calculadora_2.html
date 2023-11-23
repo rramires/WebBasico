@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lógica de Programação</title>
+</head>
+<body onload="digiteNumero1()">
+    <h1>Lógica de Programação</h1>
+
+    <button onclick="calcular('+')">+</button>
+    <button onclick="calcular('-')">-</button>
+    <button onclick="calcular('*')">*</button>
+    <button onclick="calcular('/')">/</button>
+    <button onclick="limpar()">AC</button>
+
+    <div id="output"></div>
+
+    <script>
+
+        let n1;
+        let n2;
+        let output = document.querySelector('#output');
+
+        function digiteNumero1(){
+            // armazena o primeiro numero
+            n1 = prompt("Digite um numero.");
+            n1 = parseInt(n1);
+            // imprime
+            output.innerHTML = n1;
+        }
+        
+
+        function digiteNumero2(){
+            n2 = prompt("Digite um numero.");
+            n2 = parseInt(n2);
+        }
+
+
+        function calcular(operacao){
+            digiteNumero2();
+
+            let resultado;
+
+            switch(operacao){
+                case "+" :
+                    resultado = n1 + n2;
+                break;
+                case "-" :
+                    resultado = n1 - n2;
+                break;
+                case "*" :
+                    resultado = n1 * n2;
+                break;
+                case "/" :
+                    resultado = n1 / n2;
+                break;
+            }
+        
+            n1 = resultado;
+
+            imprimir();
+        }
+
+        
+        function imprimir(){
+            output.innerHTML = n1;
+        }
+
+        function limpar(){
+            output.innerHTML = "";
+            setTimeout(digiteNumero1, 100);
+        }
+        
+
+    </script>
+</body>
+</html>
