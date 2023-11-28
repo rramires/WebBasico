@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lógica de Programação</title>
+</head>
+<body>
+    <h1>Lógica de Programação</h1>
+
+    <div id="output"></div>
+
+    <script>
+
+        let output = document.querySelector("#output");
+
+        const numeros = [25, 30, 45, 28, 0, 12, 78, 64];
+
+        let total = 0;
+
+        for(let i = 0 ; i < numeros.length ; i++){
+            // pega o numer atual
+           let numeroAtual = numeros[i];
+
+           // verifica se é par
+           if(numeroAtual % 2 === 0){
+                // soma ao valor atual 
+                total += numeroAtual;
+           }
+        }
+        // imprime na div
+        output.innerText = total;
+        
+    </script>
+</body>
+</html>
