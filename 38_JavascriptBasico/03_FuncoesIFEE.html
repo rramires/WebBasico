@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curso Javascript Básico</title>
+</head>
+<body>
+    <h1>Curso Javascript Básico</h1>
+
+    <div id="output"></div>
+
+    <script>
+        
+        // IFEE cria um bloco de códico com escopo único
+
+        ( function (){
+                let nome = "Fulano";
+                let isValid = true;
+                console.log('isValid: ', isValid, " - nome: ", nome);
+
+                function somar(n1, n2){
+                    return n1 + n2;
+                }
+
+                console.log('Resultado: ', somar(5, 10));
+                console.log('-----------------------');
+
+                // mas podemos pegar elementos do HTML para manipular
+                const divOutput = document.querySelector('#output');
+                divOutput.innerText = 'Resultado: ' +  somar(5, 10);
+                
+        } )();
+
+        // aqui é outro bloco com escopo diferente
+        ( function (){
+                let nome = "Sicrano";
+                let isValid = false;
+                console.log('isValid: ', isValid, " - nome: ", nome);
+
+                console.log('-----------------------');
+
+                // da erro, pois não existe metodo somar nesse escopo
+                console.log('Resultado: ', somar(5, 10));
+            }
+        )();
+
+        // da erro, pois não existe variavel isValid nesse escopo
+        console.log('isValid: ', isValid);
+        
+    </script>
+</body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curso Javascript Básico</title>
+</head>
+<body>
+    <h1>Curso Javascript Básico</h1>
+
+    <div id="output"></div>
+
+    <script>
+
+        const divOutput = document.querySelector('#output');
+
+        function somar(){
+
+            let htmlResult = "";
+ 
+            htmlResult += "Arguments: " + arguments + "<br>"; // array de parametros
+            htmlResult += "Arguments: " + arguments.length + "<br>"; // comprimento do array
+
+            let soma = 0;
+
+            for(let i = 0 ; i < arguments.length ; i++){
+                soma += arguments[i];
+            }
+
+            htmlResult += "Resultado da soma: " + soma + "<br>";
+            
+            divOutput.innerHTML = htmlResult;
+        }
+
+        somar(1, 2, 5, "aaa", 5, 6);
+
+
+        function media(){
+
+            let soma = 0;
+            let i = 0;
+
+            for(; i < arguments.length ; i++){
+                soma += arguments[i];
+            }
+
+            let media = soma / i;
+
+            return media;
+        }
+
+        divOutput.innerHTML += "Média: " + media(3, 6, 9);
+
+    </script>
+</body>
+</html>
