@@ -51,13 +51,42 @@
 
         divOutput.innerHTML += "Média: " + media(3, 6, 9) + "<br>";
 
-        // Desafio calcular o IMC:
-        let altura = 176;
-        let peso = 82;
+        // Desafio calcular o IMC (peso em kg e altura em cm)
+       
+        function calculaIMC(peso, altura){
+            return peso / ((altura / 100) ** 2);
+        }
+        let IMC = calculaIMC(80, 176);
 
-        let IMC = peso / ((altura / 100) ** 2);
 
-        divOutput.innerHTML += "IMC: " + IMC.toFixed(2);
+        function classificaIMC(imc){
+
+            if(imc >= 40){
+                return "Obesidade III";
+            }
+            else if(imc >= 35){
+                return "Obesidade II";
+            }
+            else if(imc >= 30){
+                return "Obesidade I";
+            }
+            else if(imc >= 25){
+                return "Acima do peso";
+            }
+            else if(imc >= 18.5){
+                return "Normal";
+            }
+            else if(imc >= 17){
+                return "Abaixo do peso";
+            }
+            else{ // menor que 16.999
+                return "Muito abaixo do peso";
+            }
+        }
+
+        divOutput.innerHTML += "IMC: " + IMC.toFixed(2) + "<br>";
+
+        divOutput.innerHTML += "Classificação: " + classificaIMC(IMC);
         
 
     </script>
