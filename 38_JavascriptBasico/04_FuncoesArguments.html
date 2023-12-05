@@ -49,7 +49,16 @@
             return media;
         }
 
-        divOutput.innerHTML += "Média: " + media(3, 6, 9);
+        divOutput.innerHTML += "Média: " + media(3, 6, 9) + "<br>";
+
+        // Desafio calcular o IMC:
+        let altura = 176;
+        let peso = 82;
+
+        let IMC = peso / ((altura / 100) ** 2);
+
+        divOutput.innerHTML += "IMC: " + IMC.toFixed(2);
+        
 
     </script>
 </body>
