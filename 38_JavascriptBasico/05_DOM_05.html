@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curso Javascript Básico</title>
+</head>
+<body>
+    <h1>Curso Javascript Básico</h1>
+        
+        <input id="txtNome" type="text">
+        <div id="msg"></div>
+        <button id="btn">Mostra</button>
+
+    <script>
+
+        (function(){
+
+            const divMsg = window.document.querySelector('#msg');
+            const inputNome = window.document.querySelector('#txtNome');
+            const btnMostra = window.document.querySelector('#btn');
+
+            // adiciona os eventos
+            inputNome.addEventListener("input", mostra);
+            btnMostra.addEventListener("click", mostra);
+
+            function mostra(){
+                    // para html
+                divMsg.innerHTML = "Bem vindo, <b>"  + inputNome.value + "</b>";
+            }            
+
+        })()
+
+    </script>
+</body>
+</html>
