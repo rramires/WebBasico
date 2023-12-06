@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curso Javascript Básico</title>
+</head>
+<body>
+    <h1>Curso Javascript Básico</h1>
+        
+        <input id="txtNome" type="text" oninput="mostra()">
+        <div id="msg"></div>
+        <button id="btn" onclick="mostra()">Mostra</button>
+
+    <script>
+
+        const divMsg = window.document.querySelector('#msg');
+        const inputNome = window.document.querySelector('#txtNome');
+
+
+        function mostra(){
+                // para html
+            divMsg.innerHTML = "Bem vindo, <b>"  + inputNome.value + "</b>";
+        }
+
+    </script>
+</body>
+</html>
