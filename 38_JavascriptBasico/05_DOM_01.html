@@ -21,15 +21,36 @@
 
     <script>
         
-        // seleciona por ID
+        // seleciona por ID - retorna um HTMLElement
         const paragrafoMain = document.getElementById("pmain");
 
-        paragrafoMain.textContent = "Texto alterado"
+        paragrafoMain.textContent = "Texto alterado";
 
-        // seleciona pelo nome da classe - retorna um array
-        const arrParagrafos = document.getElementsByClassName("paragrafos");
+        // seleciona pelo nome da classe - retorna um "array"(HTMLCollection) 
+        let arrParagrafos = document.getElementsByClassName("paragrafos");
 
-        arrParagrafos[1].textContent = "Texto alterado"
+        // caso queira converter para Array
+        arrParagrafos = Array.from(arrParagrafos);
+
+        arrParagrafos[1].textContent = "Texto alterado";
+
+        const arrP = document.getElementsByTagName("p");
+
+        arrP[0].textContent = "Primeiro parágrafo alterado";
+        arrP[1].textContent = "Segundo parágrafo alterado";
+
+        // seleciona por ID
+        document.querySelector("#idmain");
+
+        // seleciona por classe
+        document.querySelector(".ccmain");
+
+        // selecao igual aos seletores no CSS
+        document.querySelector(".ccmain p");
+        document.querySelector("#idmain h2");
+
+        // mesma sintaxe acima, mas retorna HTMLCollection
+        document.querySelectorAll("#idmain");
 
 
     </script>
