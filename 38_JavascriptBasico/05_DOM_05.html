@@ -24,8 +24,13 @@
             inputNome.addEventListener("input", mostra);
             btnMostra.addEventListener("click", mostra);
 
-            function mostra(){
-                    // para html
+            function mostra(event){
+                // Tipo do evento
+                console.log("Type:", event.type);
+                // Elemento que disparou o evento
+                console.log("Type:", event.target);
+
+                // para html
                 divMsg.innerHTML = "Bem vindo, <b>"  + inputNome.value + "</b>";
             }            
 
