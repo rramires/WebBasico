@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lógica de Programação</title>
+</head>
+<body>
+    <h1>Lógica de Programação</h1>
+
+    <div id="output"></div>
+
+    <script>
+
+        const output = document.querySelector("#output");
+        
+
+        function Caneta(newColor, newPrice){
+
+            // propriedade "escondida" (escopo dentro da funcao/objeto Caneta)
+            let color =  newColor || "";
+
+            // propriedade "exposta" (escopo acessível ex: caneta1.price)
+            this.price = newPrice || 0;
+
+            this.setColor = function(newColor){
+
+                if(newColor === 'red' || newColor === 'green' || newColor === 'blue'){
+                    color = newColor;
+                    return color;
+                }
+
+                return false;
+            }
+
+            this.getColor = function(){
+                return color;
+            }
+        }
+
+        let caneta1 = new Caneta();
+        caneta1.setColor("blue");
+        caneta1.price = 10;
+
+
+        let caneta2 = new Caneta("green", 10);       
+
+        // setando uma cor válida
+        let resp1 = caneta2.setColor("red");
+
+        // retornou a cor, então NÃO chama o alert
+        if(!resp1){
+            alert("Cor inválida 1");
+        }
+
+        // setando uma cor inválida
+        let resp2 = caneta2.setColor("white");
+
+        // retornou false, então chama o alert
+        if(!resp2){
+            alert("Cor inválida 2");
+        }
+
+
+        output.innerHTML += caneta1.getColor() + "<br>";
+        output.innerHTML += caneta2.getColor() + "<br>";        
+
+
+    </script>
+</body>
+</html>
