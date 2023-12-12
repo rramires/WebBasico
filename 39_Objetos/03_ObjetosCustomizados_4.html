@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lógica de Programação</title>
+</head>
+<body>
+    <h1>Lógica de Programação</h1>
+
+    <div id="output"></div>
+
+    <script>
+
+        const output = document.querySelector("#output");
+
+        function Pessoa(nome, sobrenome){
+            this.nome = nome;
+            this.sobrenome = sobrenome;
+        }
+
+
+        const pessoa1 = new Pessoa("Fulano", "Silva")
+
+        const pessoas = [pessoa1, new Pessoa("Sicrano", "Lobo"), new Pessoa("Beltrano", "Santos")];
+
+
+        let conteudo = "";
+
+        for(let i = 0 ; i < pessoas.length ; i++){
+
+            conteudo += pessoas[i].nome + " " + pessoas[i].sobrenome + "<br>";
+
+        }
+
+        output.innerHTML = conteudo;
+        
+    </script>
+</body>
+</html>
