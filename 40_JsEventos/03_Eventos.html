@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lógica de Programação</title>
+</head>
+<body>
+    <h1>Lógica de Programação</h1>
+
+    <button id="btn1" onclick="clicou(event)" onmousedown="clicou(event)">Botão 1</button>
+    <button id="btn2">Botão 2</button>
+    <button id="btn3">Botão 3</button>
+
+    <div id="output"></div>
+
+    <script>
+
+        const output = document.querySelector("#output");
+
+        // Usando DOM Level 0
+        const btn2 = document.getElementById("btn2");
+        btn2.onclick = clicou;
+        btn2.onmousedown = clicou;
+
+
+        const btn3 = document.getElementById("btn3");
+
+        // Usando DOM Level 2
+        btn3.addEventListener("click", clicou);
+        btn3.addEventListener("mousedown", clicou);
+
+
+        function clicou(event){
+
+            // pega o event handler (quem disparou o evento)
+            const target = event.target;
+
+            // pegar o tipo do event (click, mousedown, etc)
+            const type = event.type;
+
+            output.innerHTML += type + ": " + target.id + "<br>";
+        }
+        
+    </script>
+</body>
+</html>

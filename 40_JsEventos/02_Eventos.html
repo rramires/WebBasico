@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lógica de Programação</title>
+</head>
+<body>
+    <h1>Lógica de Programação</h1>
+
+    <div id="output"></div>
+
+    <button id="btn1" onclick="clicou()">Botão 1</button>
+    <button id="btn2">Botão 2</button>
+    <button id="btn3">Botão 3</button>
+
+    <script>
+
+        const output = document.querySelector("#output");
+
+        
+        const btn2 = document.getElementById("btn2");
+        btn2.onclick = clicou;
+
+
+        const btn3 = document.getElementById("btn3");
+        btn3.addEventListener("click", clicou);
+
+
+        function clicou(){
+
+
+            alert("clicou");
+        }
+        
+    </script>
+</body>
+</html>
