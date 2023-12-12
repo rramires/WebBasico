@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lógica de Programação</title>
+</head>
+<body onclick="clicou(event)">
+    <h1>Lógica de Programação</h1>
+
+
+    <div id="divRaiz">
+
+        <div id="divDoMeio">
+            
+            <div id="divDeDentro">
+
+                <button id="btn">Botão</button>
+    
+            </div>
+
+        </div>
+
+    </div>
+
+    <div id="output"></div>
+
+    <script>
+
+        const btn = document.getElementById("btn");
+        btn.addEventListener("click", clicou);
+
+
+        const divRaiz = document.getElementById("divRaiz");
+        const divDoMeio = document.getElementById("divDoMeio");
+        const divDeDentro = document.getElementById("divDeDentro");
+
+        // terceiro parâmetro é o capture, padrão false. 
+        // Se trocar em todos para true inverte a ordem (buuble de fora pra dentro) por exemplo
+        divRaiz.addEventListener("click", clicou/* , true */);
+        divDoMeio.addEventListener("click", clicou/* , true */);
+        divDeDentro.addEventListener("click", clicou/* , true */);
+
+
+        function clicou(event){
+
+            // se quiser parar a propagacao
+            //event.stopImmediatePropagation();
+
+            // pega o event handler (quem disparou o evento)
+            const target = event.target;
+
+            // pegar o tipo do event (click, mousedown, etc)
+            const type = event.type;
+
+             // pega o event handler atual (quem disparou no bubble/quando está subindo níveis)
+             const currentTarget = event.currentTarget;
+
+            output.innerHTML += type + ": " + target.id + " - " + currentTarget.id + "<br>";
+        }
+        
+    </script>
+</body>
+</html>
