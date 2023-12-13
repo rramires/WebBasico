@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lógica de Programação</title>
+</head>
+<body>
+    <h1>Lógica de Programação</h1>
+
+    <form id="formLogin" action="#">
+        
+        <textarea id="txtMsg" cols="30" rows="10" maxlength="100"></textarea>
+
+        <div id="output"></div>
+        
+    </form>
+
+    
+    <script>
+
+        (function(){
+            'use strict'
+
+            const output = document.querySelector("#output");
+
+            const txtMsg = document.getElementById("txtMsg");
+
+            // pega o maxlength do textarea
+            const maxlength = parseInt(txtMsg.getAttribute('maxlength'));
+
+            // mostra o valor inicial
+            output.innerText = maxlength;
+
+            // eventos do teclado keypress, keyup, keydown e input
+            txtMsg.addEventListener("input", function(event){
+                
+                // value.length = quantidade de caracteres no textarea
+                output.innerText = maxlength - txtMsg.value.length;                                        
+            });
+
+        })()
+
+
+    </script>
+</body>
+</html>

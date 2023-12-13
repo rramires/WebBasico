@@ -11,13 +11,11 @@
     <div id="output"></div>
 
     <form id="formLogin" action="#">
-        <label for="txtUser">User:</label>
-        <input type="text" id="txtUser" name="user"><br>
-        <label for="txtPass">Pass:</label>
-        <input type="password" id="txtPass" name="pass"><br>
+        
+        <textarea id="txtMsg" cols="30" rows="10"></textarea>
 
-        <!-- Usar input type="submit" se quiser que o enter funcione -->
-        <input type="submit" id="btnLogin" value="Login">
+        <div id="output"></div>
+        
     </form>
 
     
@@ -26,21 +24,13 @@
         (function(){
             'use strict'
 
-            //const btnLogin = document.getElementById("btnLogin");
-            const txtUser = document.getElementById("txtUser");
-            const txtPass = document.getElementById("txtPass");
+            const txtMsg = document.getElementById("txtMsg");
+            
 
-            const formLogin = document.getElementById("formLogin");
 
-            formLogin.addEventListener("submit", function(event){
+            txtMsg.addEventListener("submit", function(event){
                 
-                // valida
-                if(txtUser.value === "" || txtPass.value === ""){
-                    // desativa o comportamento padrão, no caso o envio do formulario pelo submit
-                    event.preventDefault();
-
-                    alert('Faltou preencher!');
-                }        
+                        
             });
 
         })()
