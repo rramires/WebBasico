@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lógica de Programação</title>
+</head>
+<body>
+    <h1>Lógica de Programação</h1>
+
+    <ul id="menu">
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+    </ul>
+
+    <div id="output"></div>
+
+    <script>
+
+        const output = document.querySelector("#output");
+
+        // Podemos capturar o evendo no elemento acima
+        const ul = document.querySelector("#menu");
+        ul.addEventListener("click", function(event){
+
+            output.innerHTML += "Clicou em: " + event.target.nodeName + " - " + event.currentTarget.nodeName + " -> " + event.target.textContent + "<br>";
+
+            // para garantir que clicou na LI
+            if(event.target.nodeName === "LI"){
+                // chama o que precisar
+                alert("clicou na LI");
+            }
+
+        });
+
+        // ou fazer um loop para adicionar em cada elemento
+        const lis = document.querySelectorAll("#menu li");
+
+        for(let i = 0 ; i < lis.length ; i++){
+
+            lis[i].addEventListener("click", function(event){
+
+                output.innerHTML += "Clicou em: " + event.target.nodeName + " - " + event.currentTarget.nodeName + " -> " + event.target.textContent + "<br>";
+
+                 // para garantir que clicou na LI
+                if(event.target.nodeName === "LI"){
+                    // chama o que precisar
+                    alert("clicou na LI");
+                }
+
+            });
+
+        }
+
+
+    </script>
+</body>
+</html>
